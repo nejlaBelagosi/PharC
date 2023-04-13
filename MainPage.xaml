@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PharC.MainPage"
+             NavigationPage.HasNavigationBar="False" 
+             >
+
+    <ScrollView>
+
+        <VerticalStackLayout
+            Spacing="15"
+            Padding="20,0"
+            VerticalOptions="Center">
+
+            <Grid 
+                RowDefinitions="Auto"
+                ColumnDefinitions="Auto, Auto, Auto">
+
+                <Ellipse 
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    WidthRequest="210"
+                    HeightRequest="210"
+                    Fill="#00FFB2"
+                    Opacity="0.22"
+                    ZIndex="1"
+                    StrokeThickness="2"
+                    TranslationX="-94"
+                    TranslationY="-104" />
+                <Ellipse 
+                    Grid.Row="0"
+                    Grid.Column="2"
+                    WidthRequest="210"
+                    HeightRequest="181"
+                    Fill="#3BE6C7"
+                    StrokeThickness="2"
+                    TranslationX="-28"
+                    TranslationY="-104" 
+                    ZIndex="1"/>
+
+                <Ellipse 
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    WidthRequest="240"
+                    HeightRequest="230"
+                    Fill="#2BE0C0"
+                    ZIndex="2"
+                    StrokeThickness="2"
+                    TranslationX="67"
+                    TranslationY="-84" />
+            </Grid>
+
+            <Image 
+                Source="pharmacy_logo.png"
+                SemanticProperties.Description="Pharmacy logo"
+                HeightRequest="145"
+                WidthRequest="148"
+                HorizontalOptions="Center"
+                VerticalOptions="Start" 
+                Margin="-100"/>
+            <Label 
+                Text="Pharmacy"
+                TextTransform="Uppercase" 
+                FontSize="48"
+                FontAttributes="Bold" 
+                Margin="20, 40,20,0"
+                FontFamily="PoppinsMedium"/>
+
+            <Grid>
+                <Image
+                    Source="pocetna.png"
+                    SemanticProperties.Description="Logo na pocetnoj stranici!"
+                    HeightRequest="320"
+                    WidthRequest="400"
+                    HorizontalOptions="Center" />
+
+                <Label 
+                    Text="N&amp;N"
+                    FontSize="48" 
+                    HorizontalOptions="Center" 
+                    VerticalOptions="Center"
+                    TextColor="#20A890" 
+                    Margin="0, -180, 0, 0"
+                    FontFamily="PetronaMedium"/>
+            </Grid>
+
+            <Button
+                x:Name="LogInBtn"
+                Text="Log in"
+                SemanticProperties.Hint="Take you to log in page on click"
+                Clicked="OnClickLogin"
+                HorizontalOptions="Center" 
+                BackgroundColor="#2BE0C0"
+                WidthRequest="258"
+                HeightRequest="38"
+                CornerRadius="50"
+                FontSize="18"
+                Padding="7,0"/>
+            <Button
+                x:Name="SignUpBtn"
+                Text="Sign Up"
+                SemanticProperties.Hint="Take you to sign up page on click"
+                Clicked="OnClickSignUp"
+                HorizontalOptions="Center" 
+                BackgroundColor="#ffffff"
+                WidthRequest="258"
+                HeightRequest="38"
+                CornerRadius="50"
+                TextColor="#2BE0C0"
+                BorderWidth="1"
+                BorderColor="#2BE0C0"
+                Margin="0 ,0, 0, 10"
+                FontSize="18"
+                Padding="7,0"/>
+
+
+
+        </VerticalStackLayout>
+
+    </ScrollView>
+
+</ContentPage>
