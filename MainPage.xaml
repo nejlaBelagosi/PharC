@@ -8,8 +8,8 @@
     <ScrollView>
 
         <VerticalStackLayout
-            Spacing="15"
-            Padding="20,0"
+            Spacing="21"
+            Padding="25,0"
             VerticalOptions="Center">
 
             <Grid 

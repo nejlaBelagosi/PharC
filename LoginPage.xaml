@@ -71,18 +71,29 @@
         <Label 
             Text="Username:"
             FontSize="20"
-            Margin="30,0,30,0"/>
-        <Entry
-            BackgroundColor="#D9D9D9"
-            Margin="30,0,30,0"/>
+           />
+        <Frame
+            Padding="5"
+            CornerRadius="50"
+            BorderColor="Gray">
+            <Entry
+               />
+        </Frame>
+
         <Label
             Text="Password:"
             FontSize="20"
-            Margin="30,0,30,0"/>
-        <Entry
-            BackgroundColor="#D9D9D9"
-            IsPassword="True"
-            Margin="30,0,30,0"/>
+            
+            />
+        <Frame 
+            Padding="5"
+            CornerRadius="50"
+            BorderColor="Gray">
+            <Entry
+                IsPassword="True"
+               />
+        </Frame>
+
         <Button
               x:Name="LoginBtn"
                 Text="Log in"
@@ -90,15 +101,14 @@
                 Clicked="LoginBtn_Clicked"
                 HorizontalOptions="Center" 
                 BackgroundColor="#2BE0C0"
-                WidthRequest="280"
-                HeightRequest="38"
+                WidthRequest="320"
+                HeightRequest="50"
                 CornerRadius="50"
                 FontSize="18"
                 Padding="7,0" 
-            Margin="0,30,0,0"/>
+            Margin="0,20,0,0"/>
         <Button
             x:Name="ForgotBtn"
-            Margin="30,0,30,0"
             Text="Forgot password?"
             Clicked="ForgotButton_Clicked"
             FontSize="20"
