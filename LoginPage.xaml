@@ -106,7 +106,7 @@
                 CornerRadius="50"
                 FontSize="18"
                 Padding="7,0" 
-            Margin="0,20,0,0"/>
+                Margin="0,20,0,0"/>
         <Button
             x:Name="ForgotBtn"
             Text="Forgot password?"
