@@ -4,6 +4,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PharC.LoginPage"
              Title="Log in"
+             
              >
 
 
@@ -46,21 +47,7 @@
                     TranslationX="67"
                     TranslationY="-84" />
         </Grid>
-
-        <!--<Label 
-            Text="Pharmacy"
-            VerticalOptions="Start" 
-            HorizontalOptions="Center" 
-            FontSize="32"
-            FontFamily="PoppinsMedium"
-            Margin="0,-220,0,0"
-            TextTransform="Uppercase"/>
-        <Label
-            Text="N&amp;N"
-            FontFamily="PetronaMedium"
-            FontSize="48"
-            HorizontalOptions="Center"
-            TextColor="#20A890"/>-->
+        
         <Image
             Source="logo_ph.png"
              SemanticProperties.Description="Logo na pocetnoj stranici!"
@@ -75,8 +62,10 @@
         <Frame
             Padding="5"
             CornerRadius="50"
-            BorderColor="Gray">
+            BorderColor="Gray"
+            >
             <Entry
+                x:Name="textEntry"
                />
         </Frame>
 

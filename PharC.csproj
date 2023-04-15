@@ -49,6 +49,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Remove="Class1.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
 	  <None Remove="Resources\Fonts\Petrona-Medium.ttf" />
 	  <None Remove="Resources\Fonts\Poppins-Medium.ttf" />
 	  <None Remove="Resources\Images\logo_Ph.png" />

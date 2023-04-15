@@ -6,7 +6,6 @@
              >
 
     <ScrollView>
-
         <VerticalStackLayout
             Spacing="21"
             Padding="25,0"
