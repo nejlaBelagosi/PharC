@@ -62,7 +62,7 @@
             HorizontalOptions="Center"
             TextColor="#20A890"/>-->
         <Image
-            Source="pharmacy_logo.png"
+            Source="logo_ph.png"
              SemanticProperties.Description="Logo na pocetnoj stranici!"
              HeightRequest="148"
              WidthRequest="145"
