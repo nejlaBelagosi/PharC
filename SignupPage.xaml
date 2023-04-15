@@ -2,12 +2,158 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PharC.SignupPage"
-             Title="Create user account">
+             Title="Create user account"
+             >
 
-    <VerticalStackLayout>
+    <ScrollView>
+    <VerticalStackLayout
+                Spacing="15"
+        Padding="20,0">
+        <Grid 
+                RowDefinitions="Auto"
+                ColumnDefinitions="Auto, Auto, Auto">
+
+            <Ellipse 
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    WidthRequest="210"
+                    HeightRequest="210"
+                    Fill="#00FFB2"
+                    Opacity="0.22"
+                    StrokeThickness="2"
+                    TranslationX="-94"
+                    TranslationY="-104" />
+            <Ellipse 
+                    Grid.Row="0"
+                    Grid.Column="2"
+                    WidthRequest="210"
+                    HeightRequest="181"
+                    Fill="#3BE6C7"
+                    StrokeThickness="2"
+                    TranslationX="-28"
+                    TranslationY="-104" />
+
+            <Ellipse 
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    WidthRequest="240"
+                    HeightRequest="230"
+                    Fill="#2BE0C0"
+                    ZIndex="2"
+                    StrokeThickness="2"
+                    TranslationX="67"
+                    TranslationY="-84" />
+        </Grid>
+
+        <Image
+            Source="logo_ph.png"
+             SemanticProperties.Description="Logo na pocetnoj stranici!"
+             HeightRequest="148"
+             WidthRequest="145"
+             HorizontalOptions="Center" 
+             Margin="0, -90,0,0"/>
+        
         <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+            Text="First name:"
+            FontSize="20"
+           />
+        <Frame
+            Padding="5"
+            CornerRadius="50"
+            BorderColor="Gray"
+            >
+            <Entry
+                x:Name="firstNameEntry"
+               />
+        </Frame>
+
+        <Label
+            Text="Last name*"
+            FontSize="20"
+            />
+        <Frame 
+            Padding="5"
+            CornerRadius="50"
+            BorderColor="Gray">
+            <Entry
+                x:Name="LastNameEntry"
+               />
+        </Frame>
+        
+            <Label 
+                Text="Date of birth*"
+                FontSize="20"
+            />
+            <Frame 
+            Padding="5"
+            CornerRadius="50"
+            BorderColor="Gray"
+            >
+            <DatePicker
+                x:Name="dateEntry"
+                
+               />
+        </Frame>
+            <Label 
+                Text="E-mail address*"
+                 FontSize="20"/>
+            <Frame 
+            Padding="5"
+            CornerRadius="50"
+            BorderColor="Gray"
+            >
+            <Entry
+                x:Name="emailEntry"
+                Keyboard="Email"
+               />
+        </Frame>
+            <Label 
+                Text="Password*"
+                 FontSize="20"/>
+            <Frame 
+            Padding="5"
+            CornerRadius="50"
+            BorderColor="Gray"
+            >
+                <Entry
+                x:Name="passwordEntry"
+                IsPassword="True"
+               />
+            </Frame>
+            <Label 
+                Text="Confirm password*"
+                 FontSize="20"/>
+            <Frame 
+            Padding="5"
+            CornerRadius="50"
+            BorderColor="Gray"
+            >
+                <Entry
+                x:Name="confirmPasswordEntry"
+                IsPassword="True"
+               />
+            </Frame>
+
+            <Button
+              x:Name="RegisterBtn"
+                Text="Create account"
+                SemanticProperties.Hint="Take you to log in page on click"
+                Clicked="RegisterBtn_Clicked"
+                HorizontalOptions="Center" 
+                BackgroundColor="#2BE0C0"
+                WidthRequest="320"
+                HeightRequest="50"
+                CornerRadius="50"
+                FontSize="18"
+                Padding="7,0" 
+                Margin="0,20,0,20"/>
+        <!--<Button
+            x:Name="ForgotBtn"
+            Text="Forgot password?"
+            Clicked="ForgotButton_Clicked"
+            FontSize="20"
+            BackgroundColor="White"
+            TextColor="#20A890"/>-->
     </VerticalStackLayout>
+</ScrollView>
 </ContentPage>
