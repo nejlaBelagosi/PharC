@@ -61,7 +61,7 @@
            />
         <Frame
             Padding="5"
-            CornerRadius="50"
+            CornerRadius="10"
             BorderColor="Gray"
             >
             <Entry
@@ -76,7 +76,7 @@
             />
         <Frame 
             Padding="5"
-            CornerRadius="50"
+            CornerRadius="10"
             BorderColor="Gray">
             <Entry
                 IsPassword="True"
@@ -90,9 +90,9 @@
                 Clicked="LoginBtn_Clicked"
                 HorizontalOptions="Center" 
                 BackgroundColor="#2BE0C0"
-                WidthRequest="320"
+                WidthRequest="350"
                 HeightRequest="50"
-                CornerRadius="50"
+                CornerRadius="15"
                 FontSize="18"
                 Padding="7,0" 
                 Margin="0,20,0,0"/>
