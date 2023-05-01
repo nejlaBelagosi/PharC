@@ -93,7 +93,7 @@
                 BackgroundColor="#2BE0C0"
                 WidthRequest="258"
                 HeightRequest="50"
-                CornerRadius="50"
+                CornerRadius="20"
                 FontSize="18"
                 Padding="7,0"
                 Margin="0,-24,0,0"/>
@@ -106,7 +106,7 @@
                 BackgroundColor="#ffffff"
                 WidthRequest="258"
                 HeightRequest="50"
-                CornerRadius="50"
+                CornerRadius="20"
                 TextColor="#2BE0C0"
                 BorderWidth="1"
                 BorderColor="#2BE0C0"
