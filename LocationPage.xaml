@@ -3,11 +3,21 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PharC.LocationPage"
              Title="Location" IconImageSource="location_icon.svg"
-              NavigationPage.HasNavigationBar="False">
+              NavigationPage.HasNavigationBar="False"
+             >
     <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+        <Image Source="location.png" Margin="0,0,0,40" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"></Image>
+        <Label FontAttributes="Bold" Text="Where we are?" Margin="0,0,0,20" TextColor="Black" FontSize="39" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"></Label>
+        <Label Text="Enable location and find us!" Margin="0,0,0,50"
+               TextColor="Black" FontSize="20" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"></Label>
+
+        <Button x:Name="Mapa" Clicked="Mapa_Clicked" Grid.Row="1" 
+                        FontAttributes="Bold" 
+                        TextColor="White" 
+                        Grid.Column="1" Text="View Our Location" 
+                        BackgroundColor="#3BE6C7" 
+                        HorizontalOptions="CenterAndExpand">
+
+        </Button>
     </VerticalStackLayout>
 </ContentPage>
