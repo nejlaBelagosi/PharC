@@ -431,9 +431,12 @@
             </ScrollView>
         </ContentPage>
 
-        <ContentPage Title="Search" IconImageSource="search_icon.svg"></ContentPage>
-        <ContentPage Title="Cart" IconImageSource="cart_icon.svg"></ContentPage>
-        <ContentPage Title="Location" IconImageSource="location_icon.svg"></ContentPage>
+        <!--<ContentPage Title="Search" IconImageSource="search_icon.svg"></ContentPage>
+        <ContentPage Title="Cart" IconImageSource="cart_icon.svg"></ContentPage>-->
+        <!--<ContentPage Title="Location" IconImageSource="location_icon.svg"></ContentPage>-->
+        <local:SearchPage />
+        <local:ShoppingCartPage />
+        <local:LocationPage />
 
     </TabbedPage.Children>
 </TabbedPage>
