@@ -56,33 +56,49 @@
              HorizontalOptions="Center" 
              Margin="0, -90,0,0"/>
         <Label 
-            Text="Username:"
+            Text="Log in to your existant account"
+            HorizontalOptions="Center"
+            FontSize="18"/>
+        <!--<Label 
+            Text="E-mail:"
             FontSize="20"
-           />
+           />-->
         <Frame
             Padding="5"
-            CornerRadius="10"
+            CornerRadius="50"
             BorderColor="Gray"
             >
             <Entry
-                x:Name="textEntry"
+                x:Name="emailEntry"
+                Placeholder="E-mail"
+                Margin="10,0,0,0"
+                Keyboard="Email"
                />
         </Frame>
 
-        <Label
+        <!--<Label
             Text="Password:"
             FontSize="20"
             
-            />
+            />-->
         <Frame 
             Padding="5"
-            CornerRadius="10"
+            CornerRadius="50"
             BorderColor="Gray">
             <Entry
                 IsPassword="True"
+                Placeholder="Password:"
+                Margin="10,0,0,0"
                />
         </Frame>
-
+        <Button
+            x:Name="ForgotBtn"
+            Text="Forgot password?"
+            Clicked="ForgotButton_Clicked"
+            FontSize="16"
+            BackgroundColor="White"
+            TextColor="#20A890"
+            HorizontalOptions="End"/>
         <Button
               x:Name="LoginBtn"
                 Text="Log in"
@@ -90,19 +106,13 @@
                 Clicked="LoginBtn_Clicked"
                 HorizontalOptions="Center" 
                 BackgroundColor="#2BE0C0"
-                WidthRequest="350"
+                WidthRequest="220"
                 HeightRequest="50"
-                CornerRadius="15"
+                CornerRadius="50"
                 FontSize="18"
                 Padding="7,0" 
                 Margin="0,20,0,0"/>
-        <Button
-            x:Name="ForgotBtn"
-            Text="Forgot password?"
-            Clicked="ForgotButton_Clicked"
-            FontSize="20"
-            BackgroundColor="White"
-            TextColor="#20A890"/>
+
 
     </VerticalStackLayout>
 </ContentPage>
