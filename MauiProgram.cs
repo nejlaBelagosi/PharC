@@ -1,5 +1,5 @@
 ﻿using Microsoft.Extensions.Logging;
-
+using Syncfusion.Maui.Core.Hosting;
 
 namespace PharC;
 
@@ -8,7 +8,7 @@ public static class MauiProgram
 	public static MauiApp CreateMauiApp()
 	{
 		var builder = MauiApp.CreateBuilder();
-		builder
+        builder
 			.UseMauiApp<App>()
             .ConfigureFonts(fonts =>
 			{
@@ -17,11 +17,14 @@ public static class MauiProgram
 				fonts.AddFont("Petrona-Medium.ttf", "PetronaMedium");
 				fonts.AddFont("Poppins-Medium.ttf", "PoppinsMedium");
 			});
+		
 
 #if DEBUG
-		builder.Logging.AddDebug();
+        builder.Logging.AddDebug();
+
 #endif
 
-		return builder.Build();
+        return builder.Build();
 	}
+
 }

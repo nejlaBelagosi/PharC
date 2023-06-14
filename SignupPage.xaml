@@ -43,9 +43,9 @@
                     StrokeThickness="2"
                     TranslationX="67"
                     TranslationY="-84" />
-        </Grid>
-
-        <Image
+             </Grid>
+ 
+            <Image
             Source="logo_ph.png"
              SemanticProperties.Description="Logo na pocetnoj stranici!"
              HeightRequest="148"

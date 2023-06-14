@@ -61,7 +61,6 @@
 	  <None Remove="Resources\Images\ad3.png" />
 	  <None Remove="Resources\Images\ad4.jpg" />
 	  <None Remove="Resources\Images\advil.png" />
-	  <None Remove="Resources\Images\bademovo.png" />
 	  <None Remove="Resources\Images\cart_icon.svg" />
 	  <None Remove="Resources\Images\cetirizin.png" />
 	  <None Remove="Resources\Images\cleansing_oil_01.png" />
@@ -70,7 +69,6 @@
 	  <None Remove="Resources\Images\hawaiian_sunscreen.png" />
 	  <None Remove="Resources\Images\home_icon.svg" />
 	  <None Remove="Resources\Images\ibuprofen.png" />
-	  <None Remove="Resources\Images\kolagen.png" />
 	  <None Remove="Resources\Images\location_icon.svg" />
 	  <None Remove="Resources\Images\logo_Ph.png" />
 	  <None Remove="Resources\Images\loranopro.png" />

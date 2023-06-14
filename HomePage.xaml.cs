@@ -1,9 +1,11 @@
 namespace PharC;
 
-public partial class HomePage : ContentPage
+public partial class HomePage : TabbedPage
 {
 	public HomePage()
 	{
-		InitializeComponent();
-	}
+        InitializeComponent();
+        //*Nejla* Binding context
+        BindingContext = new CombinedViewModel();
+    }
 }

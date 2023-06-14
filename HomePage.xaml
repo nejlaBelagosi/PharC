@@ -1,13 +1,439 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+
+<TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PharC.HomePage"
-             Title="HomePage"
-             NavigationPage.HasBackButton="False">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
-</ContentPage>
+             xmlns:local="clr-namespace:PharC"
+            xmlns:android="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.AndroidSpecific;assembly=Microsoft.Maui.Controls"
+            android:TabbedPage.ToolbarPlacement="Bottom"
+            android:TabbedPage.IsSwipePagingEnabled="false"
+            BarBackgroundColor="White"
+            BarTextColor="Black"
+            SelectedTabColor="Black"
+            UnselectedTabColor="Grey"   
+            >
+
+    <!--<local:SearchPage />
+    <local:ShoppingCartPage />
+    <local:LocationPage />-->
+
+    <TabbedPage.Children>
+
+        <ContentPage Title="Home" 
+                 IconImageSource="home_icon.svg"
+                 FlowDirection="LeftToRight"
+                 NavigationPage.HasNavigationBar="False"
+                 >
+            <!--*Nejla* povezivanje podataka -->
+            <ContentPage.BindingContext>
+                <local:CombinedViewModel />
+            </ContentPage.BindingContext>
+            <ScrollView>
+                <VerticalStackLayout>
+
+
+                    <Image
+             Source="logo_ph.png"
+             SemanticProperties.Description="Logo na pocetnoj stranici!"
+             HeightRequest="70"
+             WidthRequest="145"
+             HorizontalOptions="Center" 
+             />
+                    <Label
+            Text="N&amp;N Pharmacy"
+            FontSize="18"
+            HorizontalOptions="Center"
+            FontAttributes="Bold"/>
+
+                    <Label 
+            Text="Welcome to our PHARMACY"
+            FontSize="22"
+            Margin="30"/>
+
+                    <!--*Nejla* Ads Carousel view-->
+
+                    <CarouselView  x:Name="adView" 
+                       ItemsSource="{Binding AdsViewModel.Ads }"
+                       IndicatorView="Indicator"
+                        >
+                        <CarouselView.ItemTemplate>
+                            <DataTemplate>
+                                <StackLayout>
+                                    <Frame 
+                            HasShadow="True"
+                            BorderColor="White"
+                            CornerRadius="5"
+                            Padding="5"
+                            HeightRequest="150"
+                            WidthRequest="350"
+                            HorizontalOptions="Center"
+                            VerticalOptions="CenterAndExpand">
+
+                                        <StackLayout>
+
+                                            <Image 
+                                    Source="{Binding Image}"
+                                    Aspect="AspectFill"
+                                    WidthRequest="350"
+                                    HeightRequest="150"
+                                    HorizontalOptions="FillAndExpand" 
+                                    VerticalOptions="FillAndExpand"/>
+                                        </StackLayout>
+                                    </Frame>
+                                </StackLayout>
+                            </DataTemplate>
+                        </CarouselView.ItemTemplate>
+                    </CarouselView>
+                    <IndicatorView x:Name="Indicator" 
+                       HorizontalOptions="Center"
+                       IndicatorColor="LightGrey"
+                       SelectedIndicatorColor="LightGreen"
+                       IndicatorSize="15"
+                       Margin="10"/>
+
+                    <Label 
+            Text="Our recommendations for you"
+            Margin="20"
+            FontSize="22"/>
+
+                    <!--*Nejla* Product carousel view-->
+                    <CarouselView  x:Name="productView" 
+                       ItemsSource="{Binding ProductsViewModel.Product }"
+                       PeekAreaInsets="0"
+                       
+                       >
+
+                        <CarouselView.ItemsLayout>
+                            <LinearItemsLayout 
+                                Orientation="Horizontal"
+                                ItemSpacing="10"
+                        />
+                        </CarouselView.ItemsLayout>
+
+                        <CarouselView.ItemTemplate>
+
+                            <DataTemplate>
+                                <StackLayout>
+
+                                    <Frame 
+                            HasShadow="True"
+                            BorderColor="LightGrey"                              
+                            CornerRadius="20"
+                            
+                            WidthRequest="350"                
+                            HorizontalOptions="Center"
+                            VerticalOptions="CenterAndExpand">
+                                        <Grid>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="Auto" />
+                                                <ColumnDefinition Width="*" />
+                                            </Grid.ColumnDefinitions>
+
+                                            <Image 
+                                    Source="{Binding Image}"
+                                    Aspect="AspectFill"
+                                    HeightRequest="100"
+                                    WidthRequest="100"
+                                    HorizontalOptions="Center" />
+
+                                            <StackLayout Grid.Column="1" >
+
+                                                <Label 
+                                    Text="{Binding Name}"
+                                   
+                                    FontSize="16"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Center" />
+
+                                                <Label 
+                                    Text="{Binding Price}"
+                                    HorizontalOptions="Start" 
+                                    FontSize="25"
+                                    Margin="0,5,0,0"/>
+                                                <Label 
+                                    Text="{Binding Details}"
+                                    FontAttributes="Italic"
+                                    HorizontalOptions="Center"
+                                    MaxLines="5"
+                                    LineBreakMode="TailTruncation" />
+
+                                            </StackLayout>
+                                        </Grid>
+                                    </Frame>
+                                </StackLayout>
+                            </DataTemplate>
+                        </CarouselView.ItemTemplate>
+
+                    </CarouselView>
+
+
+                    <!--*Nejla* Blok sa dodatnim opisom-->
+                    <Frame 
+                BackgroundColor="LightGray"
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand"
+                CornerRadius="5"
+                BorderColor="#F8F6F4"
+                Margin="20,30,20,0">
+                        <StackLayout>
+
+                            <Label
+                    Text="Delivery times and availability"
+                    FontSize="18"
+                    TextColor="#8B7E74"
+                    />
+                            <Label 
+                    Text="With your zip code we can determine  more accurete delivery  times in your delivery area."
+                    FontSize="14"
+                    TextColor="Black"
+                    MaxLines="3"
+                    LineBreakMode="WordWrap"
+                   
+                    />
+                        </StackLayout>
+                    </Frame>
+                    <!--*Nejla* Blok sa dodatnim opisom-->
+                    <Frame 
+                BackgroundColor="LightBlue"
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand"
+                CornerRadius="5"
+                BorderColor="LightGray"
+                Margin="20,15,20,0">
+                        <StackLayout>
+
+                            <Label
+                    Text="Delivery times and availability"
+                    FontSize="16"
+                    TextColor="#6096B4"
+                    />
+                            <Label 
+                    Text="With your zip code we can determine  more accurete delivery  times in your delivery area."
+                    FontSize="14"
+                    TextColor="Black"
+                    MaxLines="3"
+                    LineBreakMode="WordWrap"
+                   
+                    />
+                        </StackLayout>
+                    </Frame>
+                    <!--*Nejla* Blok sa dodatnim opisom-->
+                    <Frame 
+                BackgroundColor="LightPink"
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand"
+                CornerRadius="5"
+                BorderColor="LightGray"
+                Margin="20,15,20,0">
+                        <StackLayout>
+
+                            <Label
+                    Text="Delivery times and availability"
+                    FontSize="16"
+                    TextColor="#FD8A8A"
+                    />
+                            <Label 
+                    Text="With your zip code we can determine  more accurete delivery  times in your delivery area."
+                    FontSize="14"
+                    TextColor="Black"
+                    MaxLines="3"
+                    LineBreakMode="WordWrap"
+                   
+                    />
+                        </StackLayout>
+                    </Frame>
+
+                    <Label 
+            Text="Allergy Season Top Seller"
+            FontSize="22"
+            Margin="10,30,10,20"/>
+
+                    <!--*Nejla* Season Product carousel view-->
+
+                    <CarouselView  x:Name="AllergyProductView" 
+                       ItemsSource="{Binding AllergySeasonViewModel.AllergyProducts }"
+                       PeekAreaInsets="100"
+                        >
+                        <CarouselView.ItemTemplate>
+                            <DataTemplate>
+                                <StackLayout>
+
+                                    <Frame 
+                            HasShadow="True"
+                            BorderColor="LightGrey"
+                            CornerRadius="20"
+                            Margin="10"
+                            HeightRequest="260"
+                            WidthRequest="160"
+                            HorizontalOptions="Center"
+                            VerticalOptions="CenterAndExpand">
+
+                                        <StackLayout >
+                                            <Image 
+                                    Source="{Binding Image}"
+                                    Aspect="AspectFill"
+                                    HeightRequest="100"
+                                    WidthRequest="100"
+                                    HorizontalOptions="Center" />
+
+                                            <Label 
+                                    Text="{Binding Name}"
+                                   
+                                    FontSize="18"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Center" />
+
+                                            <Label 
+                                    Text="{Binding Price}"
+                                    HorizontalOptions="Start" 
+                                    FontSize="25"
+                                    Margin="0,5,0,0"/>
+
+
+                                        </StackLayout>
+
+                                    </Frame>
+                                </StackLayout>
+
+                            </DataTemplate>
+
+                        </CarouselView.ItemTemplate>
+                    </CarouselView>
+
+                    <!--*Nejla* Top offers Product carousel view-->
+                    <Label 
+            Text="Top offers"
+            FontSize="22"
+            Margin="10,40,10,20"/>
+
+                    <CarouselView  
+                x:Name="TopOffersProductView" 
+                ItemsSource="{Binding TopOffersViewModel.TopOffersProducts }"
+                PeekAreaInsets="100"
+                        >
+                        <CarouselView.ItemTemplate>
+                            <DataTemplate>
+                                <StackLayout>
+
+                                    <Frame 
+                            HasShadow="True"
+                            BorderColor="LightGrey"
+                            CornerRadius="20"
+                            Margin="10"
+                            HeightRequest="260"
+                            WidthRequest="160"
+                            HorizontalOptions="Center"
+                            VerticalOptions="CenterAndExpand">
+
+                                        <StackLayout >
+                                            <Image 
+                                    Source="{Binding Image}"
+                                    Aspect="AspectFill"
+                                    HeightRequest="100"
+                                    WidthRequest="100"
+                                    HorizontalOptions="Center" />
+
+                                            <Label 
+                                    Text="{Binding Name}"
+                                   
+                                    FontSize="18"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Center" />
+
+                                            <Label 
+                                    Text="{Binding Price}"
+                                    HorizontalOptions="Start" 
+                                    FontSize="25"
+                                    Margin="0,5,0,0"/>
+
+
+                                        </StackLayout>
+
+                                    </Frame>
+                                </StackLayout>
+
+                            </DataTemplate>
+
+                        </CarouselView.ItemTemplate>
+                    </CarouselView>
+
+                    <!--*Nejla* New Product carousel view-->
+                    <Label 
+            Text="New products"
+            FontSize="22"
+            Margin="10,40,10,20"/>
+
+                    <CarouselView  
+                x:Name="NewProductsView" 
+                ItemsSource="{Binding NewProductsViewModel.NewProducts }"
+                PeekAreaInsets="100">
+                        <CarouselView.ItemTemplate>
+                            <DataTemplate>
+                                <StackLayout>
+
+                                    <Frame 
+                            HasShadow="True"
+                            BorderColor="LightGrey"
+                            CornerRadius="20"
+                            Margin="10"
+                            HeightRequest="260"
+                            WidthRequest="160"
+                            HorizontalOptions="Center"
+                            VerticalOptions="CenterAndExpand">
+
+                                        <StackLayout >
+                                            <Image 
+                                    Source="{Binding Image}"
+                                    Aspect="AspectFill"
+                                    HeightRequest="100"
+                                    WidthRequest="100"
+                                    HorizontalOptions="Center" />
+
+                                            <Label 
+                                    Text="{Binding Name}"
+                                   
+                                    FontSize="18"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Center" />
+
+                                            <Label 
+                                    Text="{Binding Price}"
+                                    HorizontalOptions="Start" 
+                                    FontSize="30"
+                                    Margin="0,5,0,0"/>
+                                            <Label 
+                                    Text="{Binding Details}"
+                                    FontAttributes="Italic"
+                                    HorizontalOptions="Center"
+                                    MaxLines="5"
+                                    LineBreakMode="TailTruncation" />
+
+                                        </StackLayout>
+
+                                    </Frame>
+                                </StackLayout>
+
+                            </DataTemplate>
+
+                        </CarouselView.ItemTemplate>
+                    </CarouselView>
+                    <!--*Nejla*-->
+                    <Label 
+                Text="All prices include statutory VAT."
+                FontSize="16"
+                TextColor="Gray"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                Margin="35"/>
+
+
+                </VerticalStackLayout>
+            </ScrollView>
+        </ContentPage>
+
+        <ContentPage Title="Search" IconImageSource="search_icon.svg"></ContentPage>
+        <ContentPage Title="Cart" IconImageSource="cart_icon.svg"></ContentPage>
+        <ContentPage Title="Location" IconImageSource="location_icon.svg"></ContentPage>
+
+    </TabbedPage.Children>
+</TabbedPage>
