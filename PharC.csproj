@@ -67,6 +67,7 @@
 	  <None Remove="Resources\Images\cleansing_oil_01.png" />
 	  <None Remove="Resources\Images\facial_cleanser_01.png" />
 	  <None Remove="Resources\Images\fenistil_gel.png" />
+	  <None Remove="Resources\Images\firstpage_background.png" />
 	  <None Remove="Resources\Images\hawaiian_sunscreen.png" />
 	  <None Remove="Resources\Images\home_icon.svg" />
 	  <None Remove="Resources\Images\ibuprofen.png" />
