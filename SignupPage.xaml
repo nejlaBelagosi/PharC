@@ -71,18 +71,7 @@
             Text="First name:"
             FontSize="20"
            />-->
-        <Frame
-            Padding="5"
-            CornerRadius="50"
-            BorderColor="Gray"
-            Margin="0,0,0,10"
-            >
-            <Entry
-                x:Name="firstNameEntry"
-                Placeholder="First Name"
-                Margin="10,0,0,0"
-               />
-        </Frame>
+        
 
         <!--<Label
             Text="Last name*"
@@ -93,12 +82,22 @@
             CornerRadius="50"
             BorderColor="Gray"
             Margin="0,0,0,10">
-            <Entry
+                <StackLayout Orientation="Horizontal">
+                    <Image
+                    
+            Source="user.svg"
+            WidthRequest="24"
+            HeightRequest="35"
+            VerticalOptions="Center"
+            Margin="5" />
+                    <Entry
                 x:Name="LastNameEntry"
-                Placeholder="Last name"
+                Placeholder="Username"
+                PlaceholderColor="Black"
                 Margin="10,0,0,0"
                />
-        </Frame>
+                </StackLayout>
+            </Frame>
         
             <!--<Label 
                 Text="Date of birth*"
@@ -118,18 +117,32 @@
                 Text="E-mail address*"
                  FontSize="20"/>-->
             <Frame 
-            Padding="5"
-            CornerRadius="50"
-            BorderColor="Gray"
-                Margin="0,0,0,10"
-            >
-            <Entry
-                x:Name="emailEntry"
-                Keyboard="Email"
-                Placeholder="E-mail"
-                Margin="10,0,0,0"
-               />
-        </Frame>
+    Padding="5"
+    CornerRadius="50"
+    BorderColor="Gray"
+    Margin="0,0,0,10">
+                <StackLayout Orientation="Horizontal">
+                    <Image
+                    
+            Source="email_icon.png"
+            WidthRequest="24"
+            HeightRequest="35"
+            VerticalOptions="Center"
+            Margin="5" />
+                    <Entry
+            x:Name="emailEntry"
+            Keyboard="Email"
+            Placeholder="E-mail"
+             PlaceholderColor="Black"
+            Margin="0,0,0,0" />
+                </StackLayout>
+            </Frame>
+
+
+
+
+
+
             <!--<Label 
                 Text="Password*"
                  FontSize="20"/>-->
@@ -139,13 +152,24 @@
             BorderColor="Gray"
                 Margin="0,0,0,10"
             >
-                <Entry
+                <StackLayout Orientation="Horizontal">
+                    <Image
+                    
+            Source="password.png"
+            WidthRequest="24"
+            HeightRequest="20"
+            VerticalOptions="Center"/>
+                    <Entry
                 x:Name="passwordEntry"
                 IsPassword="True"
                 Placeholder="Password"
                 Margin="10,0,0,0"
+                PlaceholderColor="Black"
                />
+                </StackLayout>
             </Frame>
+        
+        
             <!--<Label 
                 Text="Confirm password*"
                  FontSize="20"/>-->
@@ -160,6 +184,7 @@
                 x:Name="confirmPasswordEntry"
                 IsPassword="True"
                 Placeholder="Confirm password"
+                PlaceholderColor="black"
                  Margin="10,0,0,0"
                />
             </Frame>

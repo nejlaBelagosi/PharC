@@ -69,12 +69,22 @@
             CornerRadius="50"
             BorderColor="Gray"
             >
-            <Entry
+            <StackLayout Orientation="Horizontal">
+                <Image
+                    
+            Source="email_icon.png"
+            WidthRequest="24"
+            HeightRequest="35"
+            VerticalOptions="Center"
+            Margin="5" />
+                <Entry
                 x:Name="emailEntry"
                 Placeholder="E-mail"
+                PlaceholderColor="Black"
                 Margin="10,0,0,0"
                 Keyboard="Email"
                />
+            </StackLayout>
         </Frame>
 
         <!--<Label
@@ -86,11 +96,22 @@
             Padding="5"
             CornerRadius="50"
             BorderColor="Gray">
-            <Entry
+            <StackLayout Orientation="Horizontal">
+                <Image
+                    
+            Source="password.png"
+            WidthRequest="24"
+            HeightRequest="24"
+            VerticalOptions="Center"
+            Margin="5" />
+                <Entry
                 IsPassword="True"
                 Placeholder="Password:"
+                PlaceholderColor="Black"
                 Margin="10,0,0,0"
                />
+            </StackLayout>
+
         </Frame>
         <Button
             x:Name="ForgotBtn"
