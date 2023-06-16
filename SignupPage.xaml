@@ -8,7 +8,7 @@
     <ScrollView>
     <VerticalStackLayout
                 Spacing="15"
-        Padding="20,0">
+                Padding="20,0">
         <Grid 
                 RowDefinitions="Auto"
                 ColumnDefinitions="Auto, Auto, Auto">
@@ -46,12 +46,12 @@
              </Grid>
  
             <Image
-            Source="logo_ph.png"
-             SemanticProperties.Description="Logo na pocetnoj stranici!"
-             HeightRequest="148"
-             WidthRequest="145"
-             HorizontalOptions="Center" 
-             Margin="0, -90,0,0"/>
+                Source="logo_ph.png"
+                SemanticProperties.Description="Logo na pocetnoj stranici!"
+                HeightRequest="148"
+                WidthRequest="145"
+                HorizontalOptions="Center" 
+                Margin="0, -90,0,0"/>
 
             <Label
                 Text="Let's Get Started!"
@@ -85,16 +85,16 @@
                 <StackLayout Orientation="Horizontal">
                     <Image
                     
-            Source="user.svg"
-            WidthRequest="24"
-            HeightRequest="35"
-            VerticalOptions="Center"
-            Margin="5" />
+                        Source="user.svg"
+                        WidthRequest="24"
+                        HeightRequest="35"
+                        VerticalOptions="Center"
+                        Margin="5" />
                     <Entry
-                x:Name="LastNameEntry"
-                Placeholder="Username"
-                PlaceholderColor="Black"
-                Margin="10,0,0,0"
+                        x:Name="LastNameEntry"
+                        Placeholder="Username"
+                        PlaceholderColor="Black"
+                        Margin="10,0,0,0"
                />
                 </StackLayout>
             </Frame>
@@ -117,24 +117,24 @@
                 Text="E-mail address*"
                  FontSize="20"/>-->
             <Frame 
-    Padding="5"
-    CornerRadius="50"
-    BorderColor="Gray"
-    Margin="0,0,0,10">
+                Padding="5"
+                CornerRadius="50"
+                BorderColor="Gray"
+                Margin="0,0,0,10">
                 <StackLayout Orientation="Horizontal">
                     <Image
                     
-            Source="email_icon.png"
-            WidthRequest="24"
-            HeightRequest="35"
-            VerticalOptions="Center"
-            Margin="5" />
+                        Source="email_icon.png"
+                        WidthRequest="24"
+                        HeightRequest="35"
+                        VerticalOptions="Center"
+                        Margin="5" />
                     <Entry
-            x:Name="emailEntry"
-            Keyboard="Email"
-            Placeholder="E-mail"
-             PlaceholderColor="Black"
-            Margin="10,0,0,0" />
+                        x:Name="emailEntry"
+                        Keyboard="Email"
+                        Placeholder="E-mail"
+                        PlaceholderColor="Black"
+                        Margin="10,0,0,0" />
                 </StackLayout>
             </Frame>
 
@@ -147,25 +147,25 @@
                 Text="Password*"
                  FontSize="20"/>-->
             <Frame 
-            Padding="5"
-            CornerRadius="50"
-            BorderColor="Gray"
+                Padding="5"
+                CornerRadius="50"
+                BorderColor="Gray"
                 Margin="0,0,0,10"
             >
                 <StackLayout Orientation="Horizontal">
                     <Image
                     
-            Source="password.png"
-            WidthRequest="24"
-            HeightRequest="20"
-            VerticalOptions="Center"
+                        Source="password.png"
+                        WidthRequest="24"
+                        HeightRequest="20"
+                        VerticalOptions="Center"
                         Margin="5"/>
                     <Entry
-                x:Name="passwordEntry"
-                IsPassword="True"
-                Placeholder="Password"
-                Margin="10,0,0,0"
-                PlaceholderColor="Black"
+                        x:Name="passwordEntry"
+                        IsPassword="True"
+                        Placeholder="Password"
+                        Margin="10,0,0,0"
+                        PlaceholderColor="Black"
                />
                 </StackLayout>
             </Frame>
@@ -175,32 +175,32 @@
                 Text="Confirm password*"
                  FontSize="20"/>-->
             <Frame 
-            Padding="5"
-            CornerRadius="50"
-            BorderColor="Gray"
+                Padding="5"
+                CornerRadius="50"
+                BorderColor="Gray"
                 Margin="0,0,0,10"
            
             >
                 <StackLayout Orientation="Horizontal">
                     <Image
                     
-            Source="password.png"
-            WidthRequest="24"
-            HeightRequest="20"
-            VerticalOptions="Center"
+                        Source="password.png"
+                        WidthRequest="24"
+                        HeightRequest="20"
+                        VerticalOptions="Center"
                         Margin="5"/>
                     <Entry
-                x:Name="confirmPasswordEntry"
-                IsPassword="True"
-                Placeholder="Confirm password"
-                PlaceholderColor="black"
-                 Margin="10,0,0,0"
+                        x:Name="confirmPasswordEntry"
+                        IsPassword="True"
+                        Placeholder="Confirm password"
+                        PlaceholderColor="black"
+                        Margin="10,0,0,0"
                />
                 </StackLayout>
             </Frame>
 
             <Button
-              x:Name="RegisterBtn"
+                x:Name="RegisterBtn"
                 Text="Create"
                 SemanticProperties.Hint="Take you to log in page on click"
                 Clicked="RegisterBtn_Clicked"
@@ -213,12 +213,13 @@
                 Padding="7,0" 
                 Margin="0,20,0,20"/>
 
-                <StackLayout Orientation="Horizontal"
-                             HorizontalOptions="Center"
-                            >
-                <Label Text="Already have an account?" 
-                       FontSize="20"
-                       TextColor="Black"/>
+                <StackLayout 
+                    Orientation="Horizontal"
+                    HorizontalOptions="Center">
+                <Label 
+                    Text="Already have an account?" 
+                    FontSize="20"
+                    TextColor="Black"/>
 
                 <Button 
                         BackgroundColor="Transparent" 

@@ -13,8 +13,8 @@
         Padding="20,0"
         >
         <Grid 
-                RowDefinitions="Auto"
-                ColumnDefinitions="Auto, Auto, Auto">
+            RowDefinitions="Auto"
+            ColumnDefinitions="Auto, Auto, Auto">
 
             <Ellipse 
                     Grid.Row="0"
@@ -50,11 +50,11 @@
         
         <Image
             Source="logo_ph.png"
-             SemanticProperties.Description="Logo na pocetnoj stranici!"
-             HeightRequest="148"
-             WidthRequest="145"
-             HorizontalOptions="Center" 
-             Margin="0, -90,0,0"/>
+            SemanticProperties.Description="Logo na pocetnoj stranici!"
+            HeightRequest="148"
+            WidthRequest="145"
+            HorizontalOptions="Center" 
+            Margin="0, -90,0,0"/>
         <Label 
             Text="Log in to your existant account"
             HorizontalOptions="Center"
@@ -72,17 +72,17 @@
             <StackLayout Orientation="Horizontal">
                 <Image
                     
-            Source="email_icon.png"
-            WidthRequest="24"
-            HeightRequest="35"
-            VerticalOptions="Center"
-            Margin="5" />
+                    Source="email_icon.png"
+                    WidthRequest="24"
+                    HeightRequest="35"
+                    VerticalOptions="Center"
+                    Margin="5" />
                 <Entry
-                x:Name="emailEntry"
-                Placeholder="E-mail:"
-                PlaceholderColor="Black"
-                Margin="10,0,0,0"
-                Keyboard="Email"
+                    x:Name="emailEntry"
+                    Placeholder="E-mail:"
+                    PlaceholderColor="Black"
+                    Margin="10,0,0,0"
+                    Keyboard="Email"
                />
             </StackLayout>
         </Frame>
@@ -96,19 +96,20 @@
             Padding="5"
             CornerRadius="50"
             BorderColor="Gray">
-            <StackLayout Orientation="Horizontal">
+            <StackLayout 
+                Orientation="Horizontal">
                 <Image
                     
-            Source="password.png"
-            WidthRequest="24"
-            HeightRequest="24"
-            VerticalOptions="Center"
-            Margin="5" />
+                    Source="password.png"
+                    WidthRequest="24"
+                    HeightRequest="24"
+                    VerticalOptions="Center"
+                    Margin="5" />
                 <Entry
-                IsPassword="True"
-                Placeholder="Password:"
-                PlaceholderColor="Black"
-                Margin="10,0,0,0"
+                    IsPassword="True"
+                    Placeholder="Password:"
+                    PlaceholderColor="Black"
+                    Margin="10,0,0,0"
                />
             </StackLayout>
 
@@ -122,32 +123,34 @@
             TextColor="#20A890"
             HorizontalOptions="End"/>
         <Button
-              x:Name="LoginBtn"
-                Text="Log in"
-                SemanticProperties.Hint="Take you to home page on click"
-                Clicked="LoginBtn_Clicked"
-                HorizontalOptions="Center" 
-                BackgroundColor="#2BE0C0"
-                WidthRequest="220"
-                HeightRequest="50"
-                CornerRadius="50"
-                FontSize="18"
-                Padding="7,0" 
-                Margin="0,20,0,20"/>
-        <StackLayout Orientation="Horizontal"
-                             HorizontalOptions="Center">
-            <Label Text="Don't have an account?" 
-                       FontSize="20"
-                       TextColor="Black"/>
+            x:Name="LoginBtn"
+            Text="Log in"
+            SemanticProperties.Hint="Take you to home page on click"
+            Clicked="LoginBtn_Clicked"
+            HorizontalOptions="Center" 
+            BackgroundColor="#2BE0C0"
+            WidthRequest="220"
+            HeightRequest="50"
+            CornerRadius="50"
+            FontSize="18"
+            Padding="7,0" 
+            Margin="0,20,0,20"/>
+        <StackLayout 
+            Orientation="Horizontal"
+            HorizontalOptions="Center">
+            <Label 
+                Text="Don't have an account?" 
+                FontSize="20"
+                TextColor="Black"/>
 
-            <Button Grid.Column="1" 
-                        BackgroundColor="Transparent" 
-                        BorderColor="Transparent" 
-                        Text="Sign up"
-                        FontSize="20"
-                        Clicked="Button_Clicked" 
-                        Margin="0,-11,0,0"
-                        TextColor="Green"/>
+            <Button 
+                BackgroundColor="Transparent" 
+                BorderColor="Transparent" 
+                Text="Sign up"
+                FontSize="20"
+                Clicked="Button_Clicked" 
+                Margin="0,-11,0,0"
+                TextColor="Green"/>
         </StackLayout>
 
 
