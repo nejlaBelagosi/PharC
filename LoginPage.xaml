@@ -79,7 +79,7 @@
             Margin="5" />
                 <Entry
                 x:Name="emailEntry"
-                Placeholder="E-mail"
+                Placeholder="E-mail:"
                 PlaceholderColor="Black"
                 Margin="10,0,0,0"
                 Keyboard="Email"
