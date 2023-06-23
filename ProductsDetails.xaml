@@ -5,9 +5,7 @@
               xmlns:local="clr-namespace:PharC"
              Title="Products Details"
             >
-    <ContentPage.BindingContext>
-        <local:ProductsViewModel />
-    </ContentPage.BindingContext>
+
 
     <VerticalStackLayout>
 
