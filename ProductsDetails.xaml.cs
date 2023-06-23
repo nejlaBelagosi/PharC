@@ -9,6 +9,7 @@ public partial class ProductsDetails : ContentPage
         ProductName.Text = selectedProduct.Name;
         ProductDescription.Text = selectedProduct.Details;
         ProductImage.Source = selectedProduct.Image;
+        ProductPrice.Text = selectedProduct.Price;
     }
     private void Button_Clicked(object sender, EventArgs e)
     {
@@ -16,4 +17,8 @@ public partial class ProductsDetails : ContentPage
         button.TextColor = Colors.Red;
     }
 
+    private void Add_To_Cart_Clicked(object sender, EventArgs e)
+    {
+
+    }
 }

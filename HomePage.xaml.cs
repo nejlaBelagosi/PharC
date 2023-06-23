@@ -29,6 +29,7 @@ public partial class HomePage : TabbedPage
                 Navigation.PushAsync(new ProductsDetails(selectedProduct));
                 break;
             case 3:
+                Navigation.PushAsync(new ProductsDetails(selectedProduct));
                 break;
             case 4:
                 Navigation.PushAsync(new ProductsDetails(selectedProduct));
