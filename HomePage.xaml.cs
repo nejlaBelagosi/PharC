@@ -19,7 +19,7 @@ public partial class HomePage : TabbedPage
     {
         Button button = (Button)sender;
         ProductsModel selectedProduct = button.BindingContext as ProductsModel;
-
+        //navigacija na stranicu u zavisnosti od produkt ID selektovanog produkta
         switch (selectedProduct.Product_Id)
         {
             case 1:
