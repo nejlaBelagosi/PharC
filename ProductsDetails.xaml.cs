@@ -10,5 +10,10 @@ public partial class ProductsDetails : ContentPage
         ProductDescription.Text = selectedProduct.Details;
         ProductImage.Source = selectedProduct.Image;
     }
-   
+    private void Button_Clicked(object sender, EventArgs e)
+    {
+        Button button = (Button)sender;
+        button.TextColor = Colors.Red;
+    }
+
 }

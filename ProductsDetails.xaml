@@ -4,21 +4,69 @@
              x:Class="PharC.ProductsDetails"
               xmlns:local="clr-namespace:PharC"
              Title="Products Details"
+             
             >
 
+    <ScrollView>
+        <StackLayout Padding="20">
+            <Image
+             Source="logo_ph.png"
+             
+             HeightRequest="50"
+             WidthRequest="100"
+             HorizontalOptions="Center" />
+            <Label
+            Text="N&amp;N Pharmacy"
+            FontSize="18"
+            HorizontalOptions="Center"
+            FontAttributes="Bold"/>
+            <Image x:Name="ProductImage"
+                   WidthRequest="130"
+                   HeightRequest="200"
+                   />
 
-    <VerticalStackLayout>
+            
+
+            <Frame CornerRadius="30"
+       Padding="10"
+       BackgroundColor="#DECFAC">
+
+                <StackLayout>
+                    <Label x:Name="ProductName"
+                   FontSize="20"
+                   FontAttributes="Bold"
+                   TextColor="#333333"
+                   Margin="0,0,0,10"/>
+                    <Label x:Name="ProductDescription"
+               FontSize="18"
+               TextColor="Black"
+                LineBreakMode="WordWrap"
+               VerticalOptions="StartAndExpand"
+                HeightRequest="100"/>
+
+                    <Label Text="8,99$"
+               FontSize="20"
+               TextColor="Black"
+               FontAttributes="Italic"
+               Margin="0,30,0,0"/>
+
+                    <FlexLayout JustifyContent="SpaceBetween" Margin="0,80,0,50">
+                        <Button Text="♥" TextColor="White" Clicked="Button_Clicked" FontSize="20" BackgroundColor="Beige" />
+                        
+                        <Button TextColor="Black" Text="Add to Basket" FontSize="20" BackgroundColor="Beige" />
+                    </FlexLayout>
+                </StackLayout>
+
+            </Frame>
+         
 
 
-        <Image
-                            x:Name="ProductImage"/>
 
-        <Label 
-                            x:Name="ProductName"
-            />
-        <Label 
-                            x:Name="ProductDescription"/>
-                   
 
-    </VerticalStackLayout>
+
+
+
+
+        </StackLayout>
+    </ScrollView>
 </ContentPage>

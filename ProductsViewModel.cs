@@ -31,7 +31,10 @@ public class ProductsViewModel
             Image = "bademovo.png",
             Price = "$8,99",
             Product_Id = 1,
-            Details = "Detaljni opis produkta ",
+            Details = 
+            "Almond oil is a delicacy oil with pleasant sensory properties. It has been used for many years for its numerous health benefits. " +
+            "It is extremely rich in proteins, vitamins A, B1, B2, B6, E."
+            
 
         });
 
@@ -41,7 +44,9 @@ public class ProductsViewModel
             Image = "advil.png",
             Price = "$15.97",
             Product_Id = 2,
-            Details = "Detaljni opis produkta ",
+            Details = "Advil has provided safe, effective pain relief for over 35+ years." +
+            "So whether you have a headache, muscle aches, backaches, menstrual pain, minor arthritis and other joint pain."
+            
 
         });
         Carousel1Products.Add(new ProductsModel
@@ -50,7 +55,8 @@ public class ProductsViewModel
             Image = "kolagen.png",
             Price = "$58.70",
             Product_Id = 3,
-            Details = "Detaljni opis produkta ",
+            Details = "The secret of Collagen Boost is the ideal selection and ratio of" +
+            " all ingredients that are combined together to maximize collagen absorption and make your skin and hair look youthful. ",
 
         });
         Carousel1Products.Add(new ProductsModel
