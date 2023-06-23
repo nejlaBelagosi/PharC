@@ -61,10 +61,14 @@
 	  <None Remove="Resources\Images\ad3.png" />
 	  <None Remove="Resources\Images\ad4.jpg" />
 	  <None Remove="Resources\Images\advil.png" />
+	  <None Remove="Resources\Images\arrow_icon.png" />
+	  <None Remove="Resources\Images\arrow_icon.svg" />
 	  <None Remove="Resources\Images\bademovo.png" />
 	  <None Remove="Resources\Images\cart_icon.svg" />
 	  <None Remove="Resources\Images\cetirizin.png" />
 	  <None Remove="Resources\Images\cleansing_oil_01.png" />
+	  <None Remove="Resources\Images\clock_icon.svg" />
+	  <None Remove="Resources\Images\email_icon1.png" />
 	  <None Remove="Resources\Images\facial_cleanser_01.png" />
 	  <None Remove="Resources\Images\fenistil_gel.png" />
 	  <None Remove="Resources\Images\hawaiian_sunscreen.png" />
@@ -78,6 +82,8 @@
 	  <None Remove="Resources\Images\moisturiser_01.png" />
 	  <None Remove="Resources\Images\pharmacy_logo.png" />
 	  <None Remove="Resources\Images\pocetna.png" />
+	  <None Remove="Resources\Images\right_arrow.png" />
+	  <None Remove="Resources\Images\right_arrow.svg" />
 	  <None Remove="Resources\Images\search_icon.svg" />
 	  <None Remove="Resources\Images\supradyn.png" />
 	  <None Remove="Resources\Images\synofen.png" />
@@ -96,13 +102,37 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="AdvilTabletsPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="BademovoUlje.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Fenistil.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="HawaiianSunscreen.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Hexal.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="HomePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Kolagen.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="LocationPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="LoginPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Lorano.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ProductsDetails.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="SearchPage.xaml">
@@ -112,6 +142,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="SignupPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Vividrin.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

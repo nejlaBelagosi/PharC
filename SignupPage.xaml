@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PharC.SignupPage"
              Title="Create user account"
+            
              >
 
     <ScrollView>
@@ -11,7 +12,8 @@
                 Padding="20,0">
         <Grid 
                 RowDefinitions="Auto"
-                ColumnDefinitions="Auto, Auto, Auto">
+                ColumnDefinitions="Auto, Auto, Auto"
+            Margin="0,50,0,0">
 
             <Ellipse 
                     Grid.Row="0"
@@ -124,7 +126,7 @@
                 <StackLayout Orientation="Horizontal">
                     <Image
                     
-                        Source="email_icon.png"
+                        Source="email_icon1.png"
                         WidthRequest="24"
                         HeightRequest="35"
                         VerticalOptions="Center"
@@ -218,14 +220,14 @@
                     HorizontalOptions="Center">
                 <Label 
                     Text="Already have an account?" 
-                    FontSize="20"
+                    FontSize="16"
                     TextColor="Black"/>
 
                 <Button 
                         BackgroundColor="Transparent" 
                         BorderColor="Transparent" 
                         Text="Log in"
-                        FontSize="20"
+                        FontSize="16"
                         Clicked="RegisterBtn_Clicked" 
                         Margin="0,-11,0,0"
                         TextColor="Green"/>

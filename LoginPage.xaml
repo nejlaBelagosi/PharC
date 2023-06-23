@@ -72,7 +72,7 @@
             <StackLayout Orientation="Horizontal">
                 <Image
                     
-                    Source="email_icon.png"
+                    Source="email_icon1.png"
                     WidthRequest="24"
                     HeightRequest="35"
                     VerticalOptions="Center"
@@ -140,14 +140,14 @@
             HorizontalOptions="Center">
             <Label 
                 Text="Don't have an account?" 
-                FontSize="20"
+                FontSize="16"
                 TextColor="Black"/>
 
             <Button 
                 BackgroundColor="Transparent" 
                 BorderColor="Transparent" 
                 Text="Sign up"
-                FontSize="20"
+                FontSize="16"
                 Clicked="Button_Clicked" 
                 Margin="0,-11,0,0"
                 TextColor="Green"/>
