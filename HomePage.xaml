@@ -193,6 +193,7 @@
                     Text="Delivery times and availability"
                     FontSize="18"
                     TextColor="#8B7E74"
+                                Margin="0,0,0,5"
                     />
                             <Label 
                     Text="With your zip code we can determine  more accurete delivery  times in your delivery area."
@@ -218,6 +219,7 @@
                     Text="Delivery times and availability"
                     FontSize="16"
                     TextColor="#6096B4"
+                                Margin="0,0,0,5"
                     />
                             <Label 
                     Text="With your zip code we can determine  more accurete delivery  times in your delivery area."
@@ -243,6 +245,7 @@
                     Text="Delivery times and availability"
                     FontSize="16"
                     TextColor="#FD8A8A"
+                                Margin="0,0,0,5"
                     />
                             <Label 
                     Text="With your zip code we can determine  more accurete delivery  times in your delivery area."
@@ -432,14 +435,14 @@
                                     Text="{Binding Name}"
                                    
                                     FontSize="18"
-                                    HorizontalOptions="Center"
+                                    HorizontalOptions="Start"
                                     VerticalOptions="Center" />
 
                                             <Label 
                                     Text="{Binding Price}"
                                     HorizontalOptions="Start" 
                                     FontSize="25"
-                                    Margin="0,5,0,0"/>
+                                    Margin="0,5,0,15"/>
                                             <Label 
                                     Text="{Binding Details}"
                                     FontAttributes="Italic"
