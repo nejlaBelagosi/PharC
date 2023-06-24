@@ -36,24 +36,34 @@
                    FontSize="20"
                    FontAttributes="Bold"
                    TextColor="#333333"
-                   Margin="0,0,0,10"/>
+                   Margin="20,20,20,10"/>
+                    <Label 
+                        Text="Product Detail"
+                        FontSize="18"
+                        TextColor="#333333"
+                        FontAttributes="Bold"
+                        Margin="20,10,20,10"/>
                     <Label x:Name="ProductDescription"
                FontSize="18"
                TextColor="Black"
                 LineBreakMode="WordWrap"
+                           FontAutoScalingEnabled="True"
                VerticalOptions="StartAndExpand"
-                HeightRequest="100"/>
+                HeightRequest="100"
+                           Margin="20,0,20,0"/>
 
-                    <Label Text="8,99$"
+                    <Label 
+                        x:Name="ProductPrice"
                FontSize="20"
                TextColor="Black"
-               FontAttributes="Italic"
-               Margin="0,30,0,0"/>
+               FontAttributes="Bold"
+               Margin="20,30,0,0"
+                      />
 
-                    <FlexLayout JustifyContent="SpaceBetween" Margin="0,80,0,50">
-                        <Button Text="♥" TextColor="White" Clicked="Button_Clicked" FontSize="20" BackgroundColor="Beige" />
-                        
-                        <Button TextColor="Black" Text="Add to Basket" FontSize="20" BackgroundColor="Beige" />
+                    <FlexLayout JustifyContent="SpaceBetween" Margin="0,80,0,10">
+                        <Button Text="♥" TextColor="White" Clicked="Button_Clicked" FontSize="20" BackgroundColor="Beige" CornerRadius="20" Margin="10,0,0,0"/>
+                        <Button x:Name="AddToCart" TextColor="Black" Text="Add to Basket" FontSize="15" BackgroundColor="Beige"  Clicked="Add_To_Cart_Clicked" CornerRadius="20"
+                                WidthRequest="180" Margin="0,0,10,0"/>
                     </FlexLayout>
                 </StackLayout>
 

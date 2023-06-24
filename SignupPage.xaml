@@ -230,7 +230,7 @@
                         FontSize="16"
                         Clicked="RegisterBtn_Clicked" 
                         Margin="0,-11,0,0"
-                        TextColor="Green"/>
+                        TextColor="#20A890"/>
                 </StackLayout>
            
 

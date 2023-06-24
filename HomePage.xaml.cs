@@ -11,7 +11,7 @@ public partial class HomePage : TabbedPage
         InitializeComponent();
        
         //*Nejla* Binding context
-        BindingContext = new ProductsViewModel();
+        BindingContext = new CombinedViewModel();
        
     }
 
@@ -29,6 +29,7 @@ public partial class HomePage : TabbedPage
                 Navigation.PushAsync(new ProductsDetails(selectedProduct));
                 break;
             case 3:
+                Navigation.PushAsync(new ProductsDetails(selectedProduct));
                 break;
             case 4:
                 Navigation.PushAsync(new ProductsDetails(selectedProduct));
