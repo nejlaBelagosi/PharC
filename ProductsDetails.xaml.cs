@@ -1,6 +1,7 @@
 namespace PharC;
 
 public partial class ProductsDetails : ContentPage
+
 {
 	public ProductsDetails(ProductsModel selectedProduct)
 	{

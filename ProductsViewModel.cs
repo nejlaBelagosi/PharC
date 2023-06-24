@@ -20,6 +20,8 @@ public class ProductsViewModel
     public ObservableCollection<ProductsModel> Carousel2Products { get; } = new ObservableCollection<ProductsModel>();
     public ObservableCollection<ProductsModel> Carousel3Products { get; } = new ObservableCollection<ProductsModel>();
     public ObservableCollection<ProductsModel> Carousel4Products { get; } = new ObservableCollection<ProductsModel>();
+    public ObservableCollection<ProductsModel> SelectedProducts { get; } = new ObservableCollection<ProductsModel>();
+
 
     public void LoadData()
     {

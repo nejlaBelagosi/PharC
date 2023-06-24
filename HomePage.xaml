@@ -26,7 +26,7 @@
                  >
             <!--*Nejla* povezivanje podataka -->
             <ContentPage.BindingContext >
-                <local:ProductsViewModel x:Name="viewModel"/>
+                <local:CombinedViewModel x:Name="viewModel"/>
             </ContentPage.BindingContext>
             <ScrollView>
                 <VerticalStackLayout>
@@ -98,7 +98,7 @@
 
                     <!--*Nejla* Product carousel view-->
                     <CarouselView  x:Name="productView" 
-                       ItemsSource="{Binding Carousel1Products }"
+                       ItemsSource="{Binding ProductsViewModel.Carousel1Products }"
                        PeekAreaInsets="0"
                        
                        >
@@ -266,7 +266,7 @@
                     <!--*Nejla* Season Product carousel view-->
 
                     <CarouselView  x:Name="AllergyProductView" 
-                       ItemsSource="{Binding Carousel2Products }"
+                       ItemsSource="{Binding ProductsViewModel.Carousel2Products }"
                        PeekAreaInsets="100"
                         >
                         <CarouselView.ItemTemplate>
@@ -336,7 +336,7 @@
 
                     <CarouselView  
                 x:Name="TopOffersProductView" 
-                ItemsSource="{Binding Carousel3Products }"
+                ItemsSource="{Binding ProductsViewModel.Carousel3Products }"
                 PeekAreaInsets="100"
                         >
                         <CarouselView.ItemTemplate>
@@ -407,7 +407,7 @@
 
                     <CarouselView  
                 x:Name="NewProductsView" 
-                ItemsSource="{Binding Carousel4Products }"
+                ItemsSource="{Binding ProductsViewModel.Carousel4Products }"
                 PeekAreaInsets="100">
                         <CarouselView.ItemTemplate>
                             <DataTemplate>

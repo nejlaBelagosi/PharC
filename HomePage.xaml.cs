@@ -11,7 +11,7 @@ public partial class HomePage : TabbedPage
         InitializeComponent();
        
         //*Nejla* Binding context
-        BindingContext = new ProductsViewModel();
+        BindingContext = new CombinedViewModel();
        
     }
 

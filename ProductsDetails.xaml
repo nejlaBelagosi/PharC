@@ -62,7 +62,7 @@
 
                     <FlexLayout JustifyContent="SpaceBetween" Margin="0,80,0,10">
                         <Button Text="♥" TextColor="White" Clicked="Button_Clicked" FontSize="20" BackgroundColor="Beige" CornerRadius="20" Margin="10,0,0,0"/>
-                        <Button TextColor="Black" Text="Add to Basket" FontSize="15" BackgroundColor="Beige"  Clicked="Add_To_Cart_Clicked" CornerRadius="20"
+                        <Button x:Name="AddToCart" TextColor="Black" Text="Add to Basket" FontSize="15" BackgroundColor="Beige"  Clicked="Add_To_Cart_Clicked" CornerRadius="20"
                                 WidthRequest="180" Margin="0,0,10,0"/>
                     </FlexLayout>
                 </StackLayout>
