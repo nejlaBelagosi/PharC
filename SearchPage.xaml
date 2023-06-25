@@ -24,11 +24,10 @@
                 Margin="20,0,20,0"
                 HeightRequest="55">
                 <SearchBar
-        x:Name="Searchbar"
-        SearchButtonPressed="Searchbar_SearchButtonPressed"
-                   Placeholder="Search Products"
-               
-               VerticalOptions="Start"
+                    x:Name="Searchbar"
+                    SearchButtonPressed="Searchbar_SearchButtonPressed"
+                    Placeholder="Search Products"
+                    VerticalOptions="Start"
                     HeightRequest="20"
                     HorizontalOptions="FillAndExpand"/>
             </Frame>

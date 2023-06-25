@@ -26,6 +26,9 @@ public partial class SearchPage : ContentPage
             var filteredProducts = allProducts.Where(p => p.Name.ToLower().Contains(searchText.ToLower())).ToList();
             ProductsList.ItemsSource = filteredProducts;
         }
+
+
     }
+
 
 }

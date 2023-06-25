@@ -339,6 +339,7 @@ public class ProductsViewModel
         if (string.IsNullOrWhiteSpace(searchText))
         {
             // Ako je polje za pretragu prazno, prikaži sve proizvode
+
             UpdateFilteredProducts(Products);
         }
         else
