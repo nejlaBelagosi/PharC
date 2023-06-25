@@ -66,6 +66,20 @@
            />-->
         <Frame
             Padding="5"
+            CornerRadius="50">
+            <Entry x:Name="KorisnickoIme" 
+                   
+                   Placeholder="Enter username: " 
+                   PlaceholderColor="black"
+               
+                   BackgroundColor="Beige"
+               Margin="10,0,0,0"
+              />
+            </Frame>
+
+       
+        <Frame
+            Padding="5"
             CornerRadius="50"
             BorderColor="Gray"
             >
@@ -106,6 +120,7 @@
                     VerticalOptions="Center"
                     Margin="5" />
                 <Entry
+                    x:Name="Password"
                     IsPassword="True"
                     Placeholder="Password:"
                     PlaceholderColor="Black"
@@ -151,6 +166,20 @@
                 Clicked="Button_Clicked" 
                 Margin="0,-11,0,0"
                 TextColor="#20A890"/>
+            <Label x:Name="UspjesnaRegistracija"
+               Text="USPJEŠNA REGISTRACIJA"
+               IsVisible="false"
+               BackgroundColor="Green"
+               TextColor="White"
+               HorizontalOptions="Center" />
+
+            <Label x:Name="BezuspjesnaRegistracija"
+               Text="BEZUSPJEŠNA REGISTRACIJA. POKUŠAJTE PONOVO!"
+               IsVisible="false"
+               BackgroundColor="Red"
+               TextColor="White"
+               HorizontalOptions="Center" />
+            <Label x:Name="ZaProvjeru"></Label>
         </StackLayout>
 
 

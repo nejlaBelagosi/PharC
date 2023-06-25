@@ -67,7 +67,8 @@ public class ProductsViewModel
             Image = "hawaiian_sunscreen.png",
             Price = "$9.99",
             Product_Id = 4,
-            Details = "Detaljni opis produkta ",
+            Details = "HAWAIIAN TROPIC SUNSCREEN LOTION SPF 30 with an Ultra Radiance formula that leaves skin luminous" +
+            "OIL-FREE SUNSCREEN LOTION WITH A NON-GREASY LOOK AND FEEL — contains vitamins C & E to condition skin ",
 
         });
         // Dodavanje produkata u drugi carousel
@@ -77,7 +78,8 @@ public class ProductsViewModel
             Image = "vividrin.png",
             Price = "$5.13",
             Product_Id = 5,
-            Details = "Detaljni opis produkta ",
+            Details = "Eye drops Vividrin ectoin 10 ml are a natural preparation that does not contain preservatives," +
+            " which is why they are very suitable for sensitive eyes.",
         });
         Carousel2Products.Add(new ProductsModel
         {
@@ -85,7 +87,7 @@ public class ProductsViewModel
             Image = "loranopro.png",
             Price = "$7.13",
             Product_Id = 6,
-            Details = "Detaljni opis produkta ",
+            Details = "LoranoPro 5mg - For hay fever, house dust allergy and animal allergy ",
         });
         Carousel2Products.Add(new ProductsModel
         {
@@ -93,7 +95,7 @@ public class ProductsViewModel
             Image = "cetirizin.png",
             Price = "$16.15",
             Product_Id = 7,
-            Details = "Detaljni opis produkta ",
+            Details = "Cetirizin HEXAL® for allergies – strong for allergies runny nose, watery eyes or constant sneezing – allergies are tormenting and widespread.  ",
         });
         Carousel2Products.Add(new ProductsModel
         {
@@ -101,7 +103,7 @@ public class ProductsViewModel
             Image = "fenistil_gel.png",
             Price = "$6.79",
             Product_Id = 8,
-            Details = "Detaljni opis produkta ",
+            Details = "Fenistil gel is used for short-term relief of itching (pruritus) that accompanies skin reactions",
         });
 
         //dodavanje produkata u treci carousel
@@ -111,7 +113,8 @@ public class ProductsViewModel
             Image = "supradyn.png",
             Price = "$11.80",
             Product_Id = 9,
-            Details = "Detaljni opis produkta ",
+            Details = "Supradyn® IMUNO is a dietary supplement that is taken to support immunity" +
+            " during periods of increased physical or mental stress ",
         });
         Carousel3Products.Add(new ProductsModel
         {
@@ -119,7 +122,7 @@ public class ProductsViewModel
             Image = "ibuprofen.png",
             Price = "$12.00",
             Product_Id = 10,
-            Details = "Detaljni opis produkta ",
+            Details = "Ibuprofen relieves pain, reduces inflammation and helps to lower temperatures if you have a fever. ",
         });
         Carousel3Products.Add(new ProductsModel
         {
@@ -127,7 +130,8 @@ public class ProductsViewModel
             Image = "facial_cleanser_01",
             Price = "$16.15",
             Product_Id = 11,
-            Details = "Detaljni opis produkta ",
+            Details = "Specially formulated gentle gel to foam formula " +
+            "deep cleans and minimizes the appearance of pores without stripping skin of natural moisture. ",
         });
         Carousel3Products.Add(new ProductsModel
         {
@@ -135,7 +139,7 @@ public class ProductsViewModel
             Image = "synofen.png",
             Price = "$9.87",
             Product_Id = 12,
-            Details = "Detaljni opis produkta ",
+            Details = "Synofen against pain with the triple effect:fast, strong and well tolerated",
         });
         // dodavanje u cetvrti carousel
         Carousel4Products.Add(new ProductsModel
@@ -144,7 +148,8 @@ public class ProductsViewModel
             Image = "micellar_01.png",
             Price = "$20.80",
             Product_Id = 13,
-            Details = "Detaljni opis produkta ",
+            Details = "ALL-IN-1 Cleanser To hydrate and Rrefresh skin: This all-in-1 micellar cleansing water is a facial cleanser and makeup remover that is gentle on skin." +
+            " This micellar water for all skin types gently cleanses, removes makeup, dirt and oils from skin.",
         });
         Carousel4Products.Add(new ProductsModel
         {
@@ -152,7 +157,7 @@ public class ProductsViewModel
             Image = "moisturiser_01.png",
             Price = "$25.99",
             Product_Id = 14,
-            Details = "Detaljni opis produkta ",
+            Details = "Moisturisers should be used every day as part of your skincare routine to ensure that your skin cells are healthy and rejuvenated, minimising irritation and dryness ",
         });
         Carousel4Products.Add(new ProductsModel
         {
@@ -160,7 +165,8 @@ public class ProductsViewModel
             Image = "tylenol.png",
             Price = "$16.15",
             Product_Id = 15,
-            Details = "Detaljni opis produkta ",
+            Details = "Trust Extra Strength TYLENOL®. " +
+            "Extra Strength TYLENOL® products are tough on pain, but gentle on your stomach, providing fast, effective relief.",
         });
         Carousel4Products.Add(new ProductsModel
         {
@@ -168,7 +174,8 @@ public class ProductsViewModel
             Image = "cleansing_oil_01.png",
             Price = "$9.87",
             Product_Id = 16,
-            Details = "Detaljni opis produkta ",
+            Details = "If you have oily or acne-prone skin, " +
+            "the concept of slathering on any oil-based products like cleansing oils probably doesn't make much sense. ",
         });
     }
 

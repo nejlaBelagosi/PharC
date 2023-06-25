@@ -5,6 +5,7 @@ namespace PharC;
 public partial class ShoppingCartPage : ContentPage
 {
 
+    
 
     public ShoppingCartPage()
     {
@@ -18,6 +19,8 @@ public partial class ShoppingCartPage : ContentPage
     {
       
     }
+
+    
 }
 
 
