@@ -2,12 +2,102 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PharC.SearchPage"
+             xmlns:local="clr-namespace:PharC"
             Title="Search" IconImageSource="search_icon.svg"
               NavigationPage.HasNavigationBar="False">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+
+    <ContentPage.BindingContext>
+        <local:ProductsViewModel x:Name="viewModel"/>
+    </ContentPage.BindingContext>
+
+
+    <ContentPage.Content>
+        <Grid
+            Padding="0,20,0,30">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Frame
+                CornerRadius="25"
+                Margin="20,0,20,0"
+                HeightRequest="55">
+                <SearchBar
+                    x:Name="Searchbar"
+                    SearchButtonPressed="Searchbar_SearchButtonPressed"
+                    Placeholder="Search Products"
+                    VerticalOptions="Start"
+                    HeightRequest="20"
+                    HorizontalOptions="FillAndExpand"/>
+            </Frame>
+
+            <ScrollView Grid.Row="1">
+                <CollectionView 
+            x:Name="ProductsList"
+           ItemsLayout="VerticalList"
+            ItemsSource="{Binding FilteredProducts}"
+            HorizontalOptions="FillAndExpand" 
+            
+            >
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+
+                            <Frame
+                             CornerRadius="25"
+                             Margin="10,20,10,10"
+                      >
+
+                                <Grid Padding="10"
+                                  >
+
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto" />
+                                        <RowDefinition Height="Auto" />
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto" />
+                                        <ColumnDefinition Width="Auto" />
+                                    </Grid.ColumnDefinitions>
+
+                                    <Image 
+                                        x:Name="ProductImage"
+                                        Source="{Binding Image}"
+                                         Aspect="AspectFill"
+                                    HeightRequest="100"
+                                    WidthRequest="100"
+                                    HorizontalOptions="Center"/>
+
+                                    <StackLayout Grid.Column="1" >
+
+                                        <Label 
+                                    x:Name="ProductName"
+                                  Text="{Binding Name}"
+                                    FontSize="16"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Center" 
+                                    LineBreakMode="WordWrap"
+                                     />
+
+                                        <Label 
+                                    x:Name="ProductPrice"
+                                    Text="{Binding Price}"
+                                    HorizontalOptions="Start" 
+                                    FontSize="25"
+                                    Margin="0,5,0,0"/>
+
+                                    </StackLayout>
+
+                                </Grid>
+                            </Frame>
+
+
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+
+
+                </CollectionView>
+            </ScrollView>
+        </Grid>
+    </ContentPage.Content>
 </ContentPage>

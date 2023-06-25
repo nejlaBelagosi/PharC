@@ -491,7 +491,7 @@
         <ContentPage Title="Cart" IconImageSource="cart_icon.svg"></ContentPage>-->
         <!--<ContentPage Title="Location" IconImageSource="location_icon.svg"></ContentPage>-->
         <local:SearchPage />
-        <local:ShoppingCartPage />
+        <local:AboutUs />
         <local:LocationPage />
 
     </TabbedPage.Children>
