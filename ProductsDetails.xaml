@@ -24,9 +24,6 @@
                    WidthRequest="130"
                    HeightRequest="200"
                    />
-
-            
-
             <Frame CornerRadius="30"
        Padding="10"
        BackgroundColor="#DECFAC">
@@ -44,26 +41,23 @@
                         FontAttributes="Bold"
                         Margin="20,10,20,10"/>
                     <Label x:Name="ProductDescription"
-               FontSize="18"
-               TextColor="Black"
-                LineBreakMode="WordWrap"
-                           FontAutoScalingEnabled="True"
-               VerticalOptions="StartAndExpand"
-                HeightRequest="100"
-                           Margin="20,0,20,0"/>
-
-                    <Label 
-                        x:Name="ProductPrice"
-               FontSize="20"
-               TextColor="Black"
-               FontAttributes="Bold"
-               Margin="20,30,0,0"
-                      />
+                        FontSize="18"
+                        TextColor="Black"
+                        LineBreakMode="WordWrap"
+                        FontAutoScalingEnabled="True"
+                        VerticalOptions="StartAndExpand"
+                        HeightRequest="100"
+                        Margin="20,0,20,0"/>
+                    <Label x:Name="ProductPrice"
+                        FontSize="20"
+                        TextColor="Black"
+                        FontAttributes="Bold"
+                        Margin="20,30,0,0" />
 
                     <FlexLayout JustifyContent="SpaceBetween" Margin="0,80,0,10">
-                        <Button Text="♥" TextColor="White" Clicked="Button_Clicked" FontSize="20" BackgroundColor="Beige" CornerRadius="20" Margin="10,0,0,0"/>
-                        <Button x:Name="AddToCart" TextColor="Black" Text="Add to Basket" FontSize="15" BackgroundColor="Beige"  Clicked="Add_To_Cart_Clicked" CornerRadius="20"
+                        <Button x:Name="BackToHomePage" TextColor="Black" Text="Back To Home" FontSize="15" BackgroundColor="Beige"  Clicked="BackToHomePage_Clicked" CornerRadius="20"
                                 WidthRequest="180" Margin="0,0,10,0"/>
+                        <Button Text="♥" TextColor="White" Clicked="Button_Clicked" FontSize="20" BackgroundColor="Beige" CornerRadius="20" Margin="10,0,0,0"/>
                     </FlexLayout>
                 </StackLayout>
 

@@ -11,8 +11,8 @@
                 Spacing="15"
                 Padding="20,0">
         <Grid 
-                RowDefinitions="Auto"
-                ColumnDefinitions="Auto, Auto, Auto"
+            RowDefinitions="Auto"
+            ColumnDefinitions="Auto, Auto, Auto"
             Margin="0,50,0,0">
 
             <Ellipse 
@@ -69,16 +69,6 @@
                 Margin="0,0,0,10"
                 />
 
-            <!--<Label 
-            Text="First name:"
-            FontSize="20"
-           />-->
-        
-
-        <!--<Label
-            Text="Last name*"
-            FontSize="20"
-            />-->
         <Frame 
             Padding="5"
             CornerRadius="50"
@@ -101,23 +91,6 @@
                 </StackLayout>
             </Frame>
         
-            <!--<Label 
-                Text="Date of birth*"
-                FontSize="20"
-            />
-            <Frame 
-            Padding="5"
-            CornerRadius="50"
-            BorderColor="Gray"
-            >
-                <DatePicker
-                x:Name="dateEntry"
-                              
-               />
-            </Frame>-->
-            <!--<Label 
-                Text="E-mail address*"
-                 FontSize="20"/>-->
             <Frame 
                 Padding="5"
                 CornerRadius="50"
@@ -140,14 +113,6 @@
                 </StackLayout>
             </Frame>
 
-
-
-
-
-
-            <!--<Label 
-                Text="Password*"
-                 FontSize="20"/>-->
             <Frame 
                 Padding="5"
                 CornerRadius="50"
@@ -171,11 +136,7 @@
                />
                 </StackLayout>
             </Frame>
-        
-        
-            <!--<Label 
-                Text="Confirm password*"
-                 FontSize="20"/>-->
+
             <Frame 
                 Padding="5"
                 CornerRadius="50"
@@ -236,16 +197,7 @@
                         Margin="0,-11,0,0"
                         TextColor="#20A890"/>
                 </StackLayout>
-           
 
-
-            <!--<Button
-            x:Name="ForgotBtn"
-            Text="Forgot password?"
-            Clicked="ForgotButton_Clicked"
-            FontSize="20"
-            BackgroundColor="White"
-            TextColor="#20A890"/>-->
     </VerticalStackLayout>
 </ScrollView>
 </ContentPage>

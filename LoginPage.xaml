@@ -7,7 +7,6 @@
              
              >
 
-
     <VerticalStackLayout
         Spacing="15"
         Padding="20,0"
@@ -60,10 +59,7 @@
             HorizontalOptions="Center"
             FontSize="20"
             Margin="0,0,0,20"/>
-        <!--<Label 
-            Text="E-mail:"
-            FontSize="20"
-           />-->
+ 
         <Frame 
             Padding="5"
             CornerRadius="50"
@@ -86,8 +82,6 @@
             </StackLayout>
         </Frame>
 
-
-
         <Frame
             Padding="5"
             CornerRadius="50"
@@ -95,7 +89,6 @@
             >
             <StackLayout Orientation="Horizontal">
                 <Image
-                    
                     Source="email_icon1.png"
                     WidthRequest="24"
                     HeightRequest="35"
@@ -111,11 +104,6 @@
             </StackLayout>
         </Frame>
 
-        <!--<Label
-            Text="Password:"
-            FontSize="20"
-            
-            />-->
         <Frame 
             Padding="5"
             CornerRadius="50"
@@ -123,7 +111,6 @@
             <StackLayout 
                 Orientation="Horizontal">
                 <Image
-                    
                     Source="password.png"
                     WidthRequest="24"
                     HeightRequest="24"
@@ -151,26 +138,18 @@
         <Label Margin="10,0,0,0" HorizontalOptions="Start"  x:Name="BezuspjesnaRegistracija" Text="BEZUSPJEŠNA REGISTRACIJA. POKUŠAJTE PONOVO!" IsVisible="false"  TextColor="red"></Label>
         <Label x:Name="ZaProvjeru"></Label>
 
+        <Button Margin="0,0,0,10" x:Name="Registruj"
+               Padding="7,0" 
+               Clicked="Registruj_Clicked"
+               WidthRequest="220"
+               HeightRequest="50"
+               CornerRadius="50"
+               TextColor="black"  Text="Log in" 
+               FontSize="18"
+               BackgroundColor="#2BE0C0" 
+               HorizontalOptions="CenterAndExpand">
+        </Button>
 
-        
-
-            <Button Margin="0,0,0,10" x:Name="Registruj"
-                    Padding="7,0" 
-                    Clicked="Registruj_Clicked"
-                     WidthRequest="220"
-                     HeightRequest="50"
-                     CornerRadius="50"
-                    TextColor="black"  Text="Log in" 
-                    FontSize="18"
-                    BackgroundColor="#2BE0C0" 
-                    HorizontalOptions="CenterAndExpand">
-            </Button>
-            
-
-
-
-        
-        
     </VerticalStackLayout>
 </ContentPage>
    

@@ -358,8 +358,4 @@ public class ProductsViewModel
            FilteredProducts.Add(product);
         }
     }
-
-
-
-
 }

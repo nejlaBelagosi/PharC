@@ -18,8 +18,8 @@ public partial class ProductsDetails : ContentPage
         button.TextColor = Colors.Red;
     }
 
-    private void Add_To_Cart_Clicked(object sender, EventArgs e)
+    private void BackToHomePage_Clicked(object sender, EventArgs e)
     {
-
+        Navigation.PushAsync(new HomePage());
     }
 }

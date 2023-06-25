@@ -34,22 +34,20 @@
 
             <ScrollView Grid.Row="1">
                 <CollectionView 
-            x:Name="ProductsList"
-           ItemsLayout="VerticalList"
-            ItemsSource="{Binding FilteredProducts}"
-            HorizontalOptions="FillAndExpand" 
-            
+                    x:Name="ProductsList"
+                    ItemsLayout="VerticalList"
+                    ItemsSource="{Binding FilteredProducts}"
+                    HorizontalOptions="FillAndExpand" 
             >
                     <CollectionView.ItemTemplate>
                         <DataTemplate>
 
                             <Frame
                              CornerRadius="25"
-                             Margin="10,20,10,10"
-                      >
+                             Margin="10,20,10,10">
 
-                                <Grid Padding="10"
-                                  >
+                                <Grid 
+                                    Padding="10">
 
                                     <Grid.RowDefinitions>
                                         <RowDefinition Height="Auto" />
@@ -63,39 +61,34 @@
                                     <Image 
                                         x:Name="ProductImage"
                                         Source="{Binding Image}"
-                                         Aspect="AspectFill"
-                                    HeightRequest="100"
-                                    WidthRequest="100"
-                                    HorizontalOptions="Center"/>
+                                        Aspect="AspectFill"
+                                        HeightRequest="100"
+                                        WidthRequest="100"
+                                        HorizontalOptions="Center"/>
 
                                     <StackLayout Grid.Column="1" >
 
                                         <Label 
-                                    x:Name="ProductName"
-                                  Text="{Binding Name}"
-                                    FontSize="16"
-                                    HorizontalOptions="Center"
-                                    VerticalOptions="Center" 
-                                    LineBreakMode="WordWrap"
+                                            x:Name="ProductName"
+                                            Text="{Binding Name}"
+                                            FontSize="16"
+                                            HorizontalOptions="Center"
+                                            VerticalOptions="Center" 
+                                            LineBreakMode="WordWrap"
                                      />
 
                                         <Label 
-                                    x:Name="ProductPrice"
-                                    Text="{Binding Price}"
-                                    HorizontalOptions="Start" 
-                                    FontSize="25"
-                                    Margin="0,5,0,0"/>
+                                            x:Name="ProductPrice"
+                                            Text="{Binding Price}"
+                                            HorizontalOptions="Start" 
+                                            FontSize="25"
+                                            Margin="0,5,0,0"/>
 
                                     </StackLayout>
-
                                 </Grid>
                             </Frame>
-
-
                         </DataTemplate>
                     </CollectionView.ItemTemplate>
-
-
                 </CollectionView>
             </ScrollView>
         </Grid>

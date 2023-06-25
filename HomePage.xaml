@@ -13,10 +13,6 @@
             UnselectedTabColor="Grey"   
             >
 
-    <!--<local:SearchPage />
-    <local:ShoppingCartPage />
-    <local:LocationPage />-->
-
     <TabbedPage.Children>
 
         <ContentPage Title="Home" 
@@ -150,12 +146,7 @@
                                     HorizontalOptions="Start" 
                                     FontSize="25"
                                     Margin="0,5,0,0"/>
-                                                <!--<Label 
-                                    Text="{Binding Details}"
-                                    FontAttributes="Italic"
-                                    HorizontalOptions="Center"
-                                    MaxLines="5"
-                                    LineBreakMode="TailTruncation" />-->
+                                   
                                             <Button 
                                                 ImageSource="right_arrow.png"
                                                 x:Name="showDetails"
@@ -177,7 +168,6 @@
                         </CarouselView.ItemTemplate>
 
                     </CarouselView>
-
 
                     <!--*Nejla* Blok sa dodatnim opisom-->
                     <Frame 
@@ -264,7 +254,7 @@
             Margin="10,30,10,20"/>
 
                     <!--*Nejla* Season Product carousel view-->
-
+                    
                     <CarouselView  x:Name="AllergyProductView" 
                        ItemsSource="{Binding ProductsViewModel.Carousel2Products }"
                        PeekAreaInsets="100"
@@ -290,10 +280,8 @@
                                     HeightRequest="100"
                                     WidthRequest="100"
                                     HorizontalOptions="Center" />
-
                                             <Label 
                                     Text="{Binding Name}"
-                                   
                                     FontSize="18"
                                     HorizontalOptions="Center"
                                     VerticalOptions="Center" />
@@ -316,15 +304,10 @@
                                                 HorizontalOptions="EndAndExpand"
                                                 VerticalOptions="End"
                                                 />
-
-
                                         </StackLayout>
-
                                     </Frame>
                                 </StackLayout>
-
                             </DataTemplate>
-
                         </CarouselView.ItemTemplate>
                     </CarouselView>
 
@@ -487,9 +470,6 @@
             </ScrollView>
         </ContentPage>
 
-        <!--<ContentPage Title="Search" IconImageSource="search_icon.svg"></ContentPage>
-        <ContentPage Title="Cart" IconImageSource="cart_icon.svg"></ContentPage>-->
-        <!--<ContentPage Title="Location" IconImageSource="location_icon.svg"></ContentPage>-->
         <local:SearchPage />
         <local:AboutUs />
         <local:LocationPage />

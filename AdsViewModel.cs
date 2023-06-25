@@ -11,15 +11,15 @@ public class AdsViewModel
         {
             Image = "ad1.png "
         },
-                new AdsModel()
+        new AdsModel()
         {
             Image = "ad2.png "
         },
-                        new AdsModel()
+        new AdsModel()
         {
             Image = "ad3.png "
         },
-                                new AdsModel()
+        new AdsModel()
         {
             Image = "ad4.png "
         },
