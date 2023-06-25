@@ -51,7 +51,7 @@ public partial class LoginPage : ContentPage
 
             BezuspjesnaRegistracija.IsVisible = false;
             UspjesnaRegistracija.IsVisible = true;
-            Navigation.PushAsync(new SignupPage());
+            Navigation.PushAsync(new HomePage());
         }
     }
 }
