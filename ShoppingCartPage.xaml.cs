@@ -1,23 +1,16 @@
-using System.Collections.ObjectModel;
 
 namespace PharC;
 
 public partial class ShoppingCartPage : ContentPage
 {
-
-
-    public ShoppingCartPage()
-    {
+    public ShoppingCartPage() {
         InitializeComponent();
-
+     
 
     }
 
 
-    private void deleteItem_Clicked(object sender, EventArgs e)
-    {
-      
-    }
+
 }
 
 
