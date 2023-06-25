@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PharC.ShoppingCartPage"
+             xmlns:local="clr-namespace:PharC"
+             Title="About Us" IconImageSource="aboutus2.png"
+              NavigationPage.HasNavigationBar="True">
+    <ContentPage.Content>
+        <ScrollView>
+
+            <StackLayout Spacing="20" Padding="20">
+                <Image Source="logo_ph.png" WidthRequest="150" HeightRequest="150" HorizontalOptions="Center" />
+
+                
+                <Label Text="About Our Pharmacy" FontSize="24" HorizontalOptions="Center" TextColor="#2BE0C0" />
+                
+                <Image Source="aboutuspage.png"/>
+                
+                <Label TextColor="#2BE0C0" Text="Our Mission" FontSize="20" FontAttributes="Bold" />
+
+                <Label Text="We are a pharmacy dedicated to caring for your health and well-being." />
+                <Label TextColor="#2BE0C0" Text="Working Hours" FontSize="20" FontAttributes="Bold" />
+                <Label Text="Monday - Friday: 8:00 AM - 5:00 PM"/>
+
+                <Label TextColor="#2BE0C0" Text="Contact Us" FontSize="20" FontAttributes="Bold" />
+                <Label Text="Our team of experts is always here to provide you with advice and answer all your questions." FontSize="16"/>
+                <Label Text="Address: 71000 Sarajevo" />
+                <Label Text="Email: info@pharmacy.com" />
+                <Label Text="Phone: +1234567890" />
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
+
+
