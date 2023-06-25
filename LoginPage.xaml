@@ -64,20 +64,30 @@
             Text="E-mail:"
             FontSize="20"
            />-->
-        <Frame
+        <Frame 
             Padding="5"
-            CornerRadius="50">
-            <Entry x:Name="KorisnickoIme" 
-                   
-                   Placeholder="Enter username: " 
-                   PlaceholderColor="black"
-               
-                   BackgroundColor="Beige"
-               Margin="10,0,0,0"
-              />
-            </Frame>
+            CornerRadius="50"
+            BorderColor="Gray"
+            Margin="0,0,0,10">
+            <StackLayout Orientation="Horizontal">
+                <Image
+                    
+                        Source="user.svg"
+                        WidthRequest="24"
+                        HeightRequest="35"
+                        VerticalOptions="Center"
+                        Margin="5" />
+                <Entry
+                        x:Name="KorisnickoIme"
+                        Placeholder="Username"
+                        PlaceholderColor="Black"
+                        Margin="10,0,0,0"
+               />
+            </StackLayout>
+        </Frame>
 
-       
+
+
         <Frame
             Padding="5"
             CornerRadius="50"
@@ -137,52 +147,30 @@
             BackgroundColor="White"
             TextColor="#20A890"
             HorizontalOptions="End"/>
-        <Button
-            x:Name="LoginBtn"
-            Text="Log in"
-            SemanticProperties.Hint="Take you to home page on click"
-            Clicked="LoginBtn_Clicked"
-            HorizontalOptions="Center" 
-            BackgroundColor="#2BE0C0"
-            WidthRequest="220"
-            HeightRequest="50"
-            CornerRadius="50"
-            FontSize="18"
-            Padding="7,0" 
-            Margin="0,20,0,20"/>
-        <StackLayout 
-            Orientation="Horizontal"
-            HorizontalOptions="Center">
-            <Label 
-                Text="Don't have an account?" 
-                FontSize="16"
-                TextColor="Black"/>
-
-            <Button 
-                BackgroundColor="Transparent" 
-                BorderColor="Transparent" 
-                Text="Sign up"
-                FontSize="16"
-                Clicked="Button_Clicked" 
-                Margin="0,-11,0,0"
-                TextColor="#20A890"/>
-            <Label x:Name="UspjesnaRegistracija"
-               Text="USPJEŠNA REGISTRACIJA"
-               IsVisible="false"
-               BackgroundColor="Green"
-               TextColor="White"
-               HorizontalOptions="Center" />
-
-            <Label x:Name="BezuspjesnaRegistracija"
-               Text="BEZUSPJEŠNA REGISTRACIJA. POKUŠAJTE PONOVO!"
-               IsVisible="false"
-               BackgroundColor="Red"
-               TextColor="White"
-               HorizontalOptions="Center" />
-            <Label x:Name="ZaProvjeru"></Label>
-        </StackLayout>
+        <Label Margin="10,0,0,0" HorizontalOptions="Start"   x:Name="UspjesnaRegistracija" Text="USPJEŠNA REGISTRACIJA" IsVisible="false"   TextColor="green" ></Label>
+        <Label Margin="10,0,0,0" HorizontalOptions="Start"  x:Name="BezuspjesnaRegistracija" Text="BEZUSPJEŠNA REGISTRACIJA. POKUŠAJTE PONOVO!" IsVisible="false"  TextColor="red"></Label>
+        <Label x:Name="ZaProvjeru"></Label>
 
 
+        
+
+            <Button Margin="0,0,0,10" x:Name="Registruj"
+                    Padding="7,0" 
+                    Clicked="Registruj_Clicked"
+                     WidthRequest="220"
+                     HeightRequest="50"
+                     CornerRadius="50"
+                    TextColor="black"  Text="Log in" 
+                    FontSize="18"
+                    BackgroundColor="#2BE0C0" 
+                    HorizontalOptions="CenterAndExpand">
+            </Button>
+            
+
+
+
+        
+        
     </VerticalStackLayout>
 </ContentPage>
    

@@ -199,8 +199,11 @@
                         Margin="10,0,0,0"
                />
                 </StackLayout>
+                
             </Frame>
-
+            <Label Margin="10,0,0,0" HorizontalOptions="Start"   x:Name="UspjesnaRegistracija" Text="USPJEŠNA REGISTRACIJA" IsVisible="false"   TextColor="green" ></Label>
+            <Label Margin="10,0,0,0" HorizontalOptions="Start"  x:Name="BezuspjesnaRegistracija" Text="BEZUSPJEŠNA REGISTRACIJA. POKUŠAJTE PONOVO!" IsVisible="false"  TextColor="red"></Label>
+            <Label x:Name="ZaProvjeru"></Label>
             <Button
                 x:Name="RegisterBtn"
                 Text="Create"
@@ -214,6 +217,7 @@
                 FontSize="18"
                 Padding="7,0" 
                 Margin="0,20,0,20"/>
+            
 
                 <StackLayout 
                     Orientation="Horizontal"
@@ -222,7 +226,7 @@
                     Text="Already have an account?" 
                     FontSize="16"
                     TextColor="Black"/>
-
+                
                 <Button 
                         BackgroundColor="Transparent" 
                         BorderColor="Transparent" 
