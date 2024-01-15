@@ -7,15 +7,15 @@ Pharmacy N&N je aplikacija koja služi za uvid u različite farmaceutske proizvo
 
 ## Funkcionalnosti
 
--Pretrazivanje lijekova
--Pretrazivanje apoteka
--Opis lijekova
+- Pretrazivanje lijekova
+- Pretrazivanje apoteka
+- Opis lijekova
 
 # Screenshots
 
 ## Pocetna stranica
 
-![image](https://github.com/nejlaBelagosi/PharC/assets/122165597/88d4c328-c243-481d-8ef4-535209d6a99d)
+
 
 
 <table>
