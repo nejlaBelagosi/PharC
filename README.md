@@ -16,9 +16,6 @@ Pharmacy N&N je aplikacija koja služi za uvid u različite farmaceutske proizvo
 ## Pocetna stranica
 ![image](https://github.com/nejlaBelagosi/PharC/assets/122165597/3862717f-8525-4424-9bc2-4f3ad326e5a1)    ![](https://github.com/nejlaBelagosi/PharC/assets/122165597/b82b673b-043f-470f-b325-bc077ac86e8c)    ![](https://github.com/nejlaBelagosi/PharC/assets/122165597/26522b4f-d13b-4225-95f0-1cca130064e7)
 
- ![image](https://github.com/nejlaBelagosi/PharC/assets/122165597/b82b673b-043f-470f-b325-bc077ac86e8c) ![image](https://github.com/nejlaBelagosi/PharC/assets/122165597/26522b4f-d13b-4225-95f0-1cca130064e7)
-
-
 ## Home page
 ![image](https://github.com/nejlaBelagosi/PharC/assets/122165597/3f6c9f7c-ff1d-4600-890d-24e0c94adcec)    ![image](https://github.com/nejlaBelagosi/PharC/assets/122165597/de1e3886-0154-478f-9cc2-544eb507a5e0)
 
