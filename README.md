@@ -16,11 +16,15 @@ Pharmacy N&N je aplikacija koja služi za uvid u različite farmaceutske proizvo
 ## Pocetna stranica
 ![image](https://github.com/nejlaBelagosi/PharC/assets/122165597/3862717f-8525-4424-9bc2-4f3ad326e5a1)
 
+![] (https://github.com/nejlaBelagosi/PharC/assets/122165597/b82b673b-043f-470f-b325-bc077ac86e8c) |  ![](https://github.com/nejlaBelagosi/PharC/assets/122165597/26522b4f-d13b-4225-95f0-1cca130064e7)
+![](outputs/output_Biotouch/18-15_02-02-2018/Verification/ITALIC/ITALIC_movementPoints_notbalanced_roc.png)  |  ![](outputs/output_Biotouch/18-15_02-02-2018/Verification/BLOCK_LETTERS/BLOCK_LETTERS_movementPoints_notbalanced_roc.png)
+![](outputs/output_Biotouch/18-15_02-02-2018/Verification/ITALIC/ITALIC_movementPoints_notbalanced_frrVSfpr.png)  |  ![](outputs/output_Biotouch/18-15_02-02-2018/Verification/BLOCK_LETTERS/BLOCK_LETTERS_movementPoints_notbalanced_frrVSfpr.png)
 <table>
   <tr>
     <td>![image](https://github.com/nejlaBelagosi/PharC/assets/122165597/b82b673b-043f-470f-b325-bc077ac86e8c)
 </td>
-    <td>![image](https://github.com/nejlaBelagosi/PharC/assets/122165597/26522b4f-d13b-4225-95f0-1cca130064e7) </td>
+    <td>![image](https://github.com/nejlaBelagosi/PharC/assets/122165597/26522b4f-d13b-4225-95f0-1cca130064e7)
+    </td>
  </tr>
 </table>
 
